@@ -1,0 +1,265 @@
+.banner {
+    position: relative;
+    margin-top: 146px;
+    margin-bottom: 100px;
+    height: 823px;    
+}
+
+.banner-title {
+    font-size: 150px;
+    font-weight: 900;
+    line-height: 150px;
+    letter-spacing: -10px;
+    word-spacing: -22px;
+    text-transform: uppercase;
+    margin-top: 146px;
+}
+
+.banner-description {
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 50px;
+    margin-left: 100px;
+}
+
+.banner-img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.halls {
+    margin-bottom: 100px;
+}
+
+.title {
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.halls-title {
+    margin-bottom: 60px;
+}
+
+.halls-item {
+    position: relative;
+}
+
+.halls-item:not(:last-child) {
+    margin-bottom: 60px;
+}
+
+.figcaption {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% ,-50%);
+    font-size: 70px;
+    text-transform: uppercase;
+    width: 250px;
+    line-height: 80px;
+    text-align: center;
+}
+
+.booking {
+    margin-bottom: 100px;
+}
+
+.booking-title {
+    margin-bottom: 50px;
+}
+
+.form {
+    font-size: 20px;
+    max-width: 100%;
+    padding: 0 20px;
+    height: auto;
+}
+
+.booking-button {
+    background-color: #fff;
+    color: #1C1A1A;
+    padding: 5px;
+}
+
+.about {    
+    position: relative;
+    padding-bottom: 124px;
+    margin-bottom: 100px;
+}
+
+.about-title {
+    margin-bottom: 50px;
+}
+
+.about-description {
+    margin-bottom: 70px;
+}
+
+.about-item {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.about-item:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.questions-title {
+    margin-bottom: 40px;
+}
+
+.blockquote{
+    font-size: 44px;
+    font-weight: 500;
+    line-height: 50px;
+    text-transform: uppercase;
+    white-space: pre-line;
+}
+
+.blockquote:before,
+.blockquote:after {
+    content: ' " ';
+    width: 40px;
+    height: 40px;
+    color: #6c0287;
+    padding: 10px; ;
+}
+
+.photo {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.cite {
+    display: inline-block;
+    width: 269px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    margin-left: 29px;
+}
+
+.info {
+    position: absolute;
+    width: 390px;
+    right: 0;
+    bottom: 0;
+}
+
+.questions__item {
+    position: relative;
+    background-color: #fff;
+    color: #1c1a1a;
+    font-weight: 700;
+    font-size: 24px;
+    padding: 30px 70px 29px;
+    margin-bottom: 20px; 
+    list-style: none;   
+}
+
+.questions__item:nth-child(even) {
+    background-color: #440f51;
+    color: #fff;
+}
+
+.questions__item:last-child {
+    margin-bottom: 0; 
+}
+
+.questions__item:after {
+    position: absolute;   
+    content: "";
+    top: 50%;
+    transform: translateY(-23px);
+    right: 70px;
+    vertical-align: middle;
+    width: 46px;
+    height: 46px;
+    background-image: url(../img/open_color.svg);
+    background-repeat: no-repeat;
+}
+
+.questions__item:nth-child(even):after {
+    background-image: url(../img/open.svg);
+}
+
+.questions {
+    margin-bottom: 100px;
+}
+
+.contacts {
+    margin-bottom: 51px;
+}
+
+.contacts-title {
+    margin-bottom: 54px;
+}
+
+.address {
+    font-style: normal;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+}
+
+.item {
+    width: max-content;
+}
+
+.icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 30px;
+    color: #cd06ff ;
+}
+
+.location {
+    display: inline-block;
+    margin-bottom: 38px;
+}
+
+.icon-description {
+    display: inline-block;
+    white-space: pre-line;
+    vertical-align: middle;
+}
+
+.tel {
+    margin-bottom: 11px;
+}
+
+.address {
+    margin-bottom: 39px;
+}
+
+.social-item {
+    display: inline-block;
+    vertical-align: baseline;
+    outline: 1px solid transparent;
+    outline-offset: 3px;
+    border-radius: 50%;             /*не работает*/
+    color: #fff;  
+    transition: color 0.3s ease-in-out;  
+}
+
+.social-item:hover {
+    color: #cd06ff;
+}
+
+.social-item:focus {
+    outline-color: #cd06ff;     /*не работает*/
+}
+
+.social-item:active {
+    color: #840aa3;
+}
+
+.social-item:not(:last-child) {
+    margin-right: 26px;
+}
