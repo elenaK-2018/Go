@@ -1,0 +1,17 @@
+.about__title {
+    margin-bottom: 50px;
+}
+
+.about__description {
+    margin-bottom: 70px;
+}
+
+.about__text {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.about__text:not(:last-child) {
+    margin-bottom: 30px;
+}

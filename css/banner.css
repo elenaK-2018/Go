@@ -1,0 +1,31 @@
+.banner {
+    padding-top: 146px;
+}
+
+.banner__content {
+    position: relative;
+    max-width: 1180px;
+    height: 823px;
+}
+
+.banner__title {
+    font-size: 150px;
+    font-weight: 900;
+    line-height: 150px;
+    letter-spacing: -10px;
+    word-spacing: -22px;
+    text-transform: uppercase;
+}
+
+.banner__description {
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 50px;
+    margin-left: 100px;
+}
+
+.banner__img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}

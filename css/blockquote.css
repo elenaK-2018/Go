@@ -1,0 +1,29 @@
+.blockquote__title {
+    font-size: 44px;
+    font-weight: 500;
+    line-height: 50px;
+    text-transform: uppercase;
+    white-space: pre-wrap;
+    margin-bottom: 40px;
+}
+
+.blockquote__title:before,
+.blockquote__title:after {
+    content: url(../img/marks.png);
+    display: inline-block;
+    color: #6c0287;
+    line-height: 50px;
+    font-size: 44px;
+    vertical-align: middle;
+    transform: translateY(-25px);
+}
+
+.blockquote__title:after {
+    transform: rotate(180deg);
+    padding-right: 20px;
+    vertical-align: text-bottom;
+}
+
+.blockquote__info {
+    margin-left: auto;
+}

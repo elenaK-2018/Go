@@ -1,0 +1,23 @@
+.halls__title {
+    margin-bottom: 60px;
+}
+
+.halls__item {
+    position: relative;
+}
+
+.halls__item:not(:last-child) {
+    margin-bottom: 60px;
+}
+
+.halls__text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 70px;
+    text-transform: uppercase;
+    width: 250px;
+    line-height: 80px;
+    text-align: center;
+}
