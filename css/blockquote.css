@@ -4,7 +4,7 @@
     line-height: 50px;
     text-transform: uppercase;
     white-space: pre-wrap;
-    margin-bottom: 40px;
+    margin-bottom: 38px;
 }
 
 .blockquote__title:before,
@@ -20,7 +20,7 @@
 
 .blockquote__title:after {
     transform: rotate(180deg);
-    padding-right: 20px;
+    padding-right: 9px;
     vertical-align: text-bottom;
 }
 

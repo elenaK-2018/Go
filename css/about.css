@@ -2,14 +2,29 @@
     margin-bottom: 50px;
 }
 
+.about__photo {
+    max-width: 600px;
+    height: auto;
+    display: inline-block;
+    margin-right: 68px;
+    vertical-align: middle;
+}
+
+.about__right-block {
+    max-width: 500px;
+    display: inline-block;
+    vertical-align: top;
+}
+
 .about__description {
-    margin-bottom: 70px;
+    margin-bottom: 47px;
 }
 
 .about__text {
     font-size: 20px;
     font-weight: 400;
     line-height: 28px;
+    white-space: pre-line;
 }
 
 .about__text:not(:last-child) {
