@@ -1,13 +1,20 @@
 .halls__title {
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 
 .halls__item {
+    display: inline-block;
+    vertical-align: top;
     position: relative;
+    margin-bottom: 20px;
 }
 
-.halls__item:not(:last-child) {
-    margin-bottom: 60px;
+.halls__item:not(:nth-child(2n)) {
+    margin-right: 20px;
+}
+
+.halls__item:nth-last-child(-n + 2) {
+    margin-bottom: 0px;
 }
 
 .halls__text {
@@ -17,7 +24,12 @@
     transform: translate(-50%, -50%);
     font-size: 70px;
     text-transform: uppercase;
-    width: 250px;
+    max-width: 448px;
+    white-space: nowrap;
     line-height: 80px;
-    text-align: center;
+}
+
+.halls__img {
+    display: inline-block;
+    max-width: 574px;
 }
