@@ -8,25 +8,28 @@
     margin-bottom: 40px;
 }
 
+.reviews__item {
+    display: flex;
+    gap: 20px;
+}
+
 .reviews__item:not(:last-child) {
     margin-bottom: 50px;
 }
 
 .reviews__figure {
-    display: inline-block;
-    margin-right: 20px;
-    height: 319px;
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
 }
 
 .reviews__img {
-    display: inline-block;
     width: 280px;
     height: 280px;
     border-radius: 50%;
     object-fit: cover;
     object-position: top 0 right 0;
     vertical-align: middle;
-    margin-bottom: 11px;
 }
 
 .reviews__img_second {
@@ -48,8 +51,6 @@
 }
 
 .reviews__text {
-    display: inline-block;
-    vertical-align: top;
     padding-top: 52px;
-    max-width: 668px;
+    max-width: 680px;
 }

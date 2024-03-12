@@ -7,27 +7,27 @@
 }
 
 .address__item {
-    width: max-content;
+    display: flex;
+    gap: 28px;
 }
 
 .address__icon {
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 30px;
     color: #cd06ff;
 }
 
 .address__item_location {
-    display: inline-block;
     margin-bottom: 38px;
 }
 
 .address__text {
-    display: inline-block;
     white-space: pre-line;
-    vertical-align: middle;
 }
 
 .address__item_tel {
     margin-bottom: 11px;
+}
+
+.address__link {
+    display: flex;
+    gap: 28px;
 }

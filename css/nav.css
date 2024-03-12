@@ -1,0 +1,13 @@
+.nav__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav__link {
+    font-size: 22px;
+    line-height: 50px;
+    font-weight: 400;
+    text-transform: uppercase;
+}

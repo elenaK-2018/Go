@@ -1,9 +1,12 @@
+.social {
+    display: flex;
+    gap: 26px;
+}
+
 .social__item {
-    display: inline-block;
-    vertical-align: baseline;
     outline: 1px solid transparent;
     outline-offset: 3px;
-    border-radius: 50%;                 /*не работает*/
+    border-radius: 50%;                /*не работает*/
     color: #fff;
     transition: color 0.3s ease-in-out;
 }
@@ -13,13 +16,9 @@
 }
 
 .social__item:focus {
-    outline-color: #cd06ff;        /*не работает*/
+    outline-color: #cd06ff;           /*не работает*/
 }
 
 .social__item:active {
     color: #840aa3;
-}
-
-.social__item:not(:last-child) {
-    margin-right: 26px;
 }

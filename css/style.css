@@ -1,6 +1,9 @@
 @import "normalize.css";
 @import "default.css";
+@import "header.css";
+@import "nav.css";
 @import "banner.css";
+@import "relaxing.css";
 @import "halls.css";
 @import "booking.css";
 @import "about.css";
@@ -11,3 +14,4 @@
 @import "contacts.css";
 @import "address.css";
 @import "social.css";
+@import "footer-block.css";

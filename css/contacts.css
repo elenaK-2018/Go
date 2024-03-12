@@ -1,7 +1,17 @@
 .contacts {
-    padding-bottom: 51px;
+    background: linear-gradient(180.00deg, rgb(27, 26, 27),rgb(55, 10, 55) 100%);
+}
+
+.contacts__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 156px;
 }
 
 .contacts__title {
     margin-bottom: 54px;
+}
+
+.map {
+    max-width: 680px;
 }

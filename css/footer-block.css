@@ -1,0 +1,16 @@
+.footer-block {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+.footer-block__developer-name {
+    margin-bottom: 6px;
+}
+
+.footer-block__developer {
+    text-align: end;
+}

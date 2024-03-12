@@ -1,0 +1,25 @@
+.relaxing__title {
+    margin: 0 auto;
+    max-width: 880px;
+    margin-bottom: 40px;
+}
+
+.relaxing__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 20px;
+}
+
+.relaxing__item {
+    position: relative;
+    max-width: 380px;
+    height: auto;
+}
+
+.relaxing__text {
+    position: absolute;
+    font-size: 20px;
+    line-height: 28px;
+    left: 40px;
+    top: 166px;
+}

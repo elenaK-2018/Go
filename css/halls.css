@@ -2,19 +2,14 @@
     margin-bottom: 40px;
 }
 
+.halls__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
 .halls__item {
-    display: inline-block;
-    vertical-align: top;
     position: relative;
-    margin-bottom: 20px;
-}
-
-.halls__item:not(:nth-child(2n)) {
-    margin-right: 20px;
-}
-
-.halls__item:nth-last-child(-n + 2) {
-    margin-bottom: 0px;
 }
 
 .halls__text {
@@ -30,6 +25,5 @@
 }
 
 .halls__img {
-    display: inline-block;
-    max-width: 574px;
+    max-width: 580px;
 }

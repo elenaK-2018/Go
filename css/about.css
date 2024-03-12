@@ -1,3 +1,8 @@
+.about__content {
+    display: flex;
+    gap: 80px;
+}
+
 .about__title {
     margin-bottom: 50px;
 }
@@ -5,15 +10,10 @@
 .about__photo {
     max-width: 600px;
     height: auto;
-    display: inline-block;
-    margin-right: 68px;
-    vertical-align: middle;
 }
 
 .about__right-block {
     max-width: 500px;
-    display: inline-block;
-    vertical-align: top;
 }
 
 .about__description {

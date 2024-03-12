@@ -1,9 +1,186 @@
+.section-color {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: #440f51;
+}
+
 .booking__title {
     margin-bottom: 50px;
 }
 
-.booking__button {
+.form__fieldset-block {
+    border: 0;
+}
+
+.form__fieldset-block:not(:last-child) {
+    margin-bottom: 60px;
+}
+
+.form__fieldset-block_one {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form__title {
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.form__fieldset {
+    border: 0;
+}
+
+.form__subtitle {
+    font-size: 23px;
+    line-height: 28px;
+    margin-bottom: 24px;
+}
+
+.form__fieldset-block_two {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 67px;
+}
+
+.form__fieldset_two {
+    display: flex;
+    flex-direction: column;
+}
+
+.small-block {
+    max-width: 1180px;
+    padding: 0 100px;
+    margin: 0 auto;
+}
+
+.form__fieldset-block_third {
+    display: flex;
+    gap: 50px;
+}
+
+.form__input {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    appearance: none;
+}
+
+.form__radio-label {
+    display: block;
+    min-width: 250px;
+    height: 55px;
     background-color: #fff;
-    color: #1c1a1a;
-    padding: 5px;
+    color: #000;
+    font-size: 30px;
+    line-height: 40px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+    padding: 7px 15px 8px;
+    cursor: pointer;
+}
+
+.form__radio-label-1 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 22px;
+    font-weight: 400;
+    position: relative;
+    cursor: pointer;
+}
+
+.form__radio-label-1:before {
+    content: "";
+    display: block;
+    width: 27px;
+    height: 27px;
+    border-radius: 50px;
+    background-color: #fff;
+}
+
+.form__radio-label-1_square:before {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 25px;
+    border-radius: 0%;
+    background-color: #fff;
+}
+
+.form__fieldset_third {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.form__label-third_data {
+    position: relative;
+    color: #000;
+}
+
+.form__input-third {
+    width: 290px;
+    height: 52px;
+    background-color: #fff;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.form__input-third_data {
+    width: 134px;
+    height: 52px;
+    background-color: #fff;
+}
+
+.form__field-data {
+    position: absolute;
+    left: 12px;
+}
+
+.form__field {
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.form__block {
+    display: flex;
+    max-width: 300px;
+    gap: 32px;
+}
+
+.form__big-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__big-block_one {
+    padding-top: 55px;
+    gap: 50px;
+}
+
+.form__triangle {
+    position: absolute;
+    right: 19px;
+    top: 19px;
+}
+
+.booking__button {
+    width: 300px;
+    height: 60px;
+    background-color: #fff;
+    color: #6c0287;
+    border-radius: 10px;
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 16px 50px;
+    /* position: absolute;
+    right: 0;
+    bottom: 0; */
 }
