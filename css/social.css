@@ -3,22 +3,17 @@
     gap: 26px;
 }
 
-.social__item {
+.social__icon {
     outline: 1px solid transparent;
-    outline-offset: 3px;
-    border-radius: 50%;                /*не работает*/
     color: #fff;
     transition: color 0.3s ease-in-out;
 }
 
-.social__item:hover {
+.social__icon:focus {
+    outline-color: #cd06ff;
+    background-color: #eadeed;        /* не работает */
+}
+
+.social__icon:active {
     color: #cd06ff;
-}
-
-.social__item:focus {
-    outline-color: #cd06ff;           /*не работает*/
-}
-
-.social__item:active {
-    color: #840aa3;
 }

@@ -55,61 +55,129 @@
     margin: 0 auto;
 }
 
-.form__fieldset-block_third {
-    display: flex;
-    gap: 50px;
+.form__input {
+    width: 27px;
+    height: 27px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: relative;
+    margin-right: 12px;
+    cursor: pointer;
 }
 
-.form__input {
+.form__input_btn {
     position: absolute;
-    opacity: 0;
     width: 0;
     height: 0;
-    appearance: none;
+    margin-right: 0;
 }
 
 .form__radio-label {
-    display: block;
-    min-width: 250px;
+    display: inline-block;
+    width: 250px;
     height: 55px;
+    text-align: center;
+    padding: 7px 15px 8px;
     background-color: #fff;
     color: #000;
     font-size: 30px;
     line-height: 40px;
     text-transform: uppercase;
     border-radius: 8px;
-    text-align: center;
-    position: relative;
-    padding: 7px 15px 8px;
     cursor: pointer;
 }
 
-.form__radio-label-1 {
+.form__radio-label:hover,
+.form__radio-label:focus {
+    background-color: #eadeed;
+    border: 3px solid #640aa3;
+}
+
+.form__input_btn:active + .form__radio-label,
+.form__input_btn:checked + .form__radio-label {
+    background-color: #6c0287;
+    border: 3px solid #fff;
+    color: #fff;
+}
+
+.form__input_btn:focus + .form__radio-label {
+    outline: 3px solid #640aa3;
+}
+
+.form__label-one {
     display: flex;
     align-items: center;
-    gap: 12px;
-    font-size: 22px;
-    font-weight: 400;
-    position: relative;
     cursor: pointer;
 }
 
-.form__radio-label-1:before {
+.form__input_ellipse:before {
     content: "";
-    display: block;
-    width: 27px;
-    height: 27px;
+    position: absolute;
+    inset: 0;
     border-radius: 50px;
     background-color: #fff;
 }
 
-.form__radio-label-1_square:before {
+.form__input_ellipse:after {
     content: "";
-    display: block;
-    width: 25px;
-    height: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 9px;
+    height: 9px;
+    transform: translate(-50%, -50%);
+    background-color: #000;
+    border-radius: 50%;
+    opacity: 0;
+}
+
+.form__input_ellipse:checked:after {
+    opacity: 1;
+}
+
+.form__input_square:before {
+    content: "";
+    position: absolute;
+    inset: 0;
     border-radius: 0%;
     background-color: #fff;
+}
+
+.form__input_square:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 9px;
+    height: 9px;
+    transform: translate(-50%, -50%);
+    background-color: #000;
+    border-radius: 0%;
+    opacity: 0;
+}
+
+.form__input {
+    outline: 1px solid transparent;
+    color: #fff;
+    transition: color 0.3s ease-in-out;
+}
+
+.form__input:focus {
+    outline-color: #cd06ff;
+}
+
+.form__input_btn:focus {
+    outline: none;
+}
+
+.form__input_square:checked:after {
+    opacity: 1;
+}
+
+.form__fieldset-block_third {
+    display: flex;
+    gap: 50px;
 }
 
 .form__fieldset_third {
@@ -121,25 +189,46 @@
 .form__label-third_data {
     position: relative;
     color: #000;
-}
-
-.form__input-third {
-    width: 290px;
+    width: 300px;
     height: 52px;
     background-color: #fff;
     font-size: 18px;
     line-height: 28px;
 }
 
+.form__label-third_data_small {
+    width: 134px;
+}
+
+.form__input-data {
+    opacity: 0;
+    margin-top: 10px;
+}
+
 .form__input-third_data {
     width: 134px;
+}
+
+.form__input-third {
+    width: 300px;
     height: 52px;
     background-color: #fff;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.form__input-third:focus {
+    outline: 2px solid #cd06ff;
+}
+
+.form__input-third_center {
+    width: 280px;
 }
 
 .form__field-data {
     position: absolute;
-    left: 12px;
+    left: 20px;
+    top: 12px;
 }
 
 .form__field {
@@ -149,7 +238,7 @@
 
 .form__block {
     display: flex;
-    max-width: 300px;
+    width: 300px;
     gap: 32px;
 }
 
@@ -159,14 +248,23 @@
 }
 
 .form__big-block_one {
-    padding-top: 55px;
+    padding-top: 52px;
     gap: 50px;
+}
+
+.form__big-block_center {
+    width: 280px;
 }
 
 .form__triangle {
     position: absolute;
     right: 19px;
     top: 19px;
+    cursor: pointer;
+}
+
+.form__label-third_last {
+    margin-bottom: 40px;
 }
 
 .booking__button {
@@ -180,7 +278,16 @@
     font-weight: 700;
     text-transform: uppercase;
     padding: 16px 50px;
-    /* position: absolute;
-    right: 0;
-    bottom: 0; */
+}
+
+.booking__button:hover,
+.booking__button:focus {
+    background-color: #eadeed;
+    border: 3px solid #6c0287;
+}
+
+.booking__button:active {
+    background-color: #eadeed;
+    border: none;
+    color: #6c0287;
 }

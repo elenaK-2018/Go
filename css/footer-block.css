@@ -14,3 +14,12 @@
 .footer-block__developer {
     text-align: end;
 }
+
+.footer-block__developer-link:hover,
+.footer-block__developer-link:focus {
+    color: #6c0287;
+}
+
+.footer-block__developer-link:active {
+    color: #640aa3;
+}

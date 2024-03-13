@@ -11,3 +11,16 @@
     font-weight: 400;
     text-transform: uppercase;
 }
+
+/* .nav__link:visited {
+    color: #6c0287;
+} */
+
+.nav__link:hover,
+.nav__link:focus {
+    color: #6c0287;
+}
+
+.nav__link:active {
+    color: #640aa3;
+}

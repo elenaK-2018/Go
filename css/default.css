@@ -43,6 +43,13 @@ button {
     cursor: pointer;
     background-color: transparent;
     border: none;
+    outline: none;
+}
+
+input {
+    border: 0;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 a {

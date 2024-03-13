@@ -16,3 +16,18 @@
     line-height: 30px;
     text-transform: uppercase;
 }
+
+.header__button:hover {
+    background-color: #6c0287;
+    border: 3px solid #6c0287;
+}
+
+.header__button:focus {
+    background-color: #6c0287;
+    border: none;
+}
+
+.header__button:active {
+    background-color: #640aa3;
+    border: 1px solid #000;
+}

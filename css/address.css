@@ -31,3 +31,12 @@
     display: flex;
     gap: 28px;
 }
+
+.address__link:hover,
+.address__link:focus {
+    color: #6c0287;
+}
+
+.address__link:active {
+    color: #640aa3;
+}

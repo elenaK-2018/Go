@@ -33,8 +33,25 @@
     height: 46px;
     background-image: url(../icons/open_color.svg);
     background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.questions__item:hover:after {
+    background-image: url(../icons/open_color-hover.svg);
+}
+
+.questions__item:active:after {
+    background-image: url(../icons/close.svg);
 }
 
 .questions__item:nth-child(even):after {
     background-image: url(../icons/open.svg);
+}
+
+.questions__item:nth-child(even):hover:after {
+    background-image: url(../icons/open-hover.svg);
+}
+
+.questions__item:nth-child(even):active:after {
+    background-image: url(../icons/open-active.svg);
 }

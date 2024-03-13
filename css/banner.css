@@ -1,6 +1,6 @@
 .banner__content {
     position: relative;
-    max-width: 1180px;
+    width: 1180px;
     height: 823px;
 }
 
@@ -15,6 +15,7 @@
 }
 
 .banner__description {
+    width: max-content;
     font-size: 28px;
     font-weight: 400;
     line-height: 50px;
@@ -33,51 +34,39 @@
     gap: 40px;
     align-items: flex-end;
     margin-bottom: 150px;
-    padding-top: 141px;
 }
 
 .banner__item {
-    position: relative;
     font-size: 30px;
     font-weight: 400;
     line-height: 40px;
-    display: flex;
-    flex-direction: column;
     text-align: center;
 }
 
-.banner__item:before {
-    content: "";
-    color: #cd06ff;
-    left: 50%;
-    bottom: 50px;
-    transform: translate(-50%);
-    position: absolute;
-}
-
 .banner__item_one {
-    max-width: 193px;
+    width: 193px;
+    height: 209px;
 }
 
-.banner__item_one:before {
-    content: "4";
-    height: 125px;
+.first-letter {
+    display: block;
+    color: #cd06ff;
     font-size: 100px;
     font-weight: 900;
-    margin: 0;
+    line-height: 141px;
 }
 
 .banner__item_two {
-    max-width: 166px;
+    width: 166px;
+    height: 174px;
 }
 
-.banner__item_two:before {
-    content: "new";
-    text-transform: uppercase;
-    font-size: 70px;
+.first-word {
+    display: block;
+    color: #cd06ff;
+    font-size: 75px;
     font-weight: 900;
-    margin: 0;
-    height: 102px;
+    line-height: 106px;
 }
 
 .banner__button {
@@ -91,17 +80,37 @@
     text-transform: uppercase;
     padding: 25px 69px;
     z-index: 50;
-    box-shadow: 4px 4px 4px rgba(108, 2, 135, 0.25);
+}
+
+.banner__button:hover,
+.banner__button:focus {
+    background-color: #840aa3;
+}
+
+.banner__button:active {
+    background-color: #640aa3;
 }
 
 .banner__open {
     display: block;
     width: 97px;
     height: 97px;
-    background-image: url(../img/down.svg);
+    background-image: url(../icons/down.svg);
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     bottom: 90px;
     color: #fff;
+}
+
+.banner__open:hover {
+    background-image: url(../icons/down-hover.svg);
+}
+
+.banner__open:active {
+    background-image: url(../icons/down-active.svg);
+}
+
+.banner__open:focus {
+    outline: 1px solid #cd06ff;
 }
