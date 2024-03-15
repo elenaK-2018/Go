@@ -15,6 +15,10 @@
     text-align: end;
 }
 
+.footer-block__developer-link {
+    transition: color 0.4s ease-in-out;
+}
+
 .footer-block__developer-link:hover,
 .footer-block__developer-link:focus {
     color: #6c0287;

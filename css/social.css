@@ -6,12 +6,17 @@
 .social__icon {
     outline: 1px solid transparent;
     color: #fff;
-    transition: color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out, transform 0.4s ease-in-out;
+}
+
+.social__icon:hover {
+    color: #eadeed; 
+    transform: scale(0.8);
 }
 
 .social__icon:focus {
-    outline-color: #cd06ff;
-    background-color: #eadeed;        /* не работает */
+    outline-color: #cd06ff;                       /* не работает */
+    color: #eadeed;       
 }
 
 .social__icon:active {

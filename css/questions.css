@@ -34,6 +34,7 @@
     background-image: url(../icons/open_color.svg);
     background-repeat: no-repeat;
     cursor: pointer;
+    transition: 0.5s ease-in-out;
 }
 
 .questions__item:hover:after {

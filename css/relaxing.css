@@ -14,6 +14,11 @@
     position: relative;
     max-width: 380px;
     height: auto;
+    transition: 0.4s ease-in-out;
+}
+
+.relaxing__item:hover {
+    transform: scale(1.1);
 }
 
 .relaxing__text {

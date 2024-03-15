@@ -324,19 +324,19 @@
                                 </legend>
                                 <div class="form__big-block form__big-block_one">
                                     <div class="form__block">
-                                        <label class="form__label-third form__label-third_data form__label-third_data_small">
+                                        <label class="form__label-third form__label-third_small">
                                             <span class="form__field-data">Дата</span>
                                             <input
                                             class="form__input-data form__input-third_data"
                                             type="date"
                                             name="date"
-                                            required/>
+                                            required/>                                            
                                             <svg class="form__triangle" width="21" height="15" viewbox="0 0 19 12" fill="none">
                                                 <path d="M9.5 12L0.406734 0.75L18.5933 0.75L9.5 12Z" fill="#211E1E"/>
                                             </svg>
                                         </label>                                        
 
-                                        <label class="form__label-third form__label-third_data form__label-third_data_small">
+                                        <label class="form__label-third form__label-third_small">
                                             <span class="form__field-data">Время</span>
                                             <input
                                             class="form__input-data form__input_data"
@@ -349,18 +349,22 @@
                                         </label>                                        
                                     </div>                                
 
-                                    <label class="form__label-third form__label-third_data">
-                                        <span class="form__field-data">Сколько человек</span>
-                                        <input
-                                        class="form__input-data form__input-third"
-                                        type="number"
-                                        name="quantity"
-                                        min="2"
-                                        max="10"
-                                        required/>
-                                        <svg class="form__triangle" width="21" height="15" viewbox="0 0 19 12" fill="none">
-                                            <path d="M9.5 12L0.406734 0.75L18.5933 0.75L9.5 12Z" fill="#211E1E"/>
-                                        </svg>
+                                    <label class="form__label-third">
+                                        <!-- <span class="form__field-data">Сколько человек</span> -->
+                                        <div class="form__select-wrap">
+                                            <select class="form__select" name="quantity" required>
+                                                <option>Сколько человек</option>
+                                                <option class="form__select-item" value="2">2</option>
+                                                <option class="form__select-item" value="3">3</option>
+                                                <option class="form__select-item" value="4">4</option>
+                                                <option class="form__select-item" value="5">5</option>
+                                                <option class="form__select-item" value="6">6</option>
+                                                <option class="form__select-item" value="7">7</option>
+                                                <option class="form__select-item" value="8">8</option>
+                                                <option class="form__select-item" value="9">9</option>
+                                                <option class="form__select-item" value="10">10</option>
+                                            </select>
+                                        </div>
                                     </label>                                    
                                 </div>
 
