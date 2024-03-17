@@ -17,6 +17,10 @@
     transition: 0.4s ease-in-out;
 }
 
+.relaxing__item:nth-child(3n-1) {
+    transform: translateY(70px);
+}
+
 .relaxing__item:hover {
     transform: scale(1.1);
 }

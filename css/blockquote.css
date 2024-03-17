@@ -16,7 +16,7 @@
 .blockquote__title:after {
     content: url(../img/marks.png);
     display: inline-block;
-    color: #6c0287;
+    color: var(--main-color);
     line-height: 50px;
     font-size: 44px;
     vertical-align: middle;

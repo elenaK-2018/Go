@@ -50,7 +50,7 @@
 
 .first-letter {
     display: block;
-    color: #cd06ff;
+    color: var(--violet);
     font-size: 100px;
     font-weight: 900;
     line-height: 141px;
@@ -63,7 +63,7 @@
 
 .first-word {
     display: block;
-    color: #cd06ff;
+    color: var(--violet);
     font-size: 75px;
     font-weight: 900;
     line-height: 106px;
@@ -72,9 +72,9 @@
 .banner__button {
     width: 374px;
     height: 80px;
-    background-color: #6c0287;
+    background-color: var(--main-color);
     border-radius: 10px;
-    color: #fff;
+    color: var(--text-color);
     font-size: 26px;
     font-weight: 700;
     text-transform: uppercase;
@@ -84,11 +84,11 @@
 
 .banner__button:hover,
 .banner__button:focus {
-    background-color: #840aa3;
+    background-color: var(--light-purple);
 }
 
 .banner__button:active {
-    background-color: #640aa3;
+    background-color: var(--purple);
 }
 
 .banner__open {
@@ -100,7 +100,7 @@
     left: 50%;
     transform: translateX(-50%);
     bottom: 90px;
-    color: #fff;
+    color: var(--text-color);
     transition: 0.4s ease-in-out;
 }
 
@@ -113,5 +113,5 @@
 }
 
 .banner__open:focus {
-    outline: 1px solid #cd06ff;
+    outline: 1px solid var(--violet);
 }

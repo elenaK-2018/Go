@@ -19,9 +19,9 @@
 
 .nav__link:hover,
 .nav__link:focus {
-    color: #6c0287;
+    color: var(--main-color);
 }
 
 .nav__link:active {
-    color: #640aa3;
+    color: var(--purple);
 }

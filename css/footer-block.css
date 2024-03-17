@@ -21,9 +21,9 @@
 
 .footer-block__developer-link:hover,
 .footer-block__developer-link:focus {
-    color: #6c0287;
+    color: var(--main-color);
 }
 
 .footer-block__developer-link:active {
-    color: #640aa3;
+    color: var(--purple);
 }

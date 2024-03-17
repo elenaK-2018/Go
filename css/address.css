@@ -12,7 +12,7 @@
 }
 
 .address__icon {
-    color: #cd06ff;
+    color: var(--violet);
 }
 
 .address__item_location {
@@ -35,9 +35,9 @@
 
 .address__link:hover,
 .address__link:focus {
-    color: #6c0287;
+    color: var(--main-color);
 }
 
 .address__link:active {
-    color: #640aa3;
+    color: var(--purple);
 }

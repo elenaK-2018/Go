@@ -8,8 +8,8 @@
 .header__button {
     width: 280px;
     height: 55px;
-    color: #fff;
-    border: 3px solid rgb(205, 6, 255);
+    color: var(--text-color);
+    border: 3px solid var(--violet);
     border-radius: 10px;
     padding: 12px 32px 13px;
     font-size: 22px;
@@ -19,16 +19,16 @@
 }
 
 .header__button:hover {
-    background-color: #6c0287;
-    border: 3px solid #6c0287;
+    background-color: var(--main-color);
+    border: 3px solid var(--main-color);
 }
 
 .header__button:focus {
-    background-color: #6c0287;
+    background-color: var(--main-color);
     border: none;
 }
 
 .header__button:active {
-    background-color: #640aa3;
-    border: 1px solid #000;
+    background-color: var(--purple);
+    border: 1px solid var(--black);
 }

@@ -5,20 +5,20 @@
 
 .social__icon {
     outline: 1px solid transparent;
-    color: #fff;
+    color: var(--text-color);
     transition: color 0.3s ease-in-out, transform 0.4s ease-in-out;
 }
 
 .social__icon:hover {
-    color: #eadeed; 
+    color: var(--light);
     transform: scale(0.8);
 }
 
 .social__icon:focus {
-    outline-color: #cd06ff;                       /* не работает */
-    color: #eadeed;       
+    outline-color: var(--violet);    /* не работает */
+    color: var(--light);
 }
 
 .social__icon:active {
-    color: #cd06ff;
+    color: var(--violet);
 }

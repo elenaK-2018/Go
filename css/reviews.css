@@ -24,12 +24,27 @@
 }
 
 .reviews__img {
+    position: relative;
     width: 280px;
     height: 280px;
-    border-radius: 50%;
     object-fit: cover;
     object-position: top 0 right 0;
     vertical-align: middle;
+    border-radius: 140px;
+}
+
+.reviews-overlay:before {
+    content: "";
+    width: 280px;
+    height: 280px;
+    position: absolute;
+    border-radius: 140px;
+    background: radial-gradient(
+        50% 50% at 50% 50%,
+        rgba(196, 196, 196, 0),
+        rgba(108, 2, 135, 0.5) 100%
+    );
+    z-index: 10;
 }
 
 .reviews__img_second {

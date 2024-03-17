@@ -4,7 +4,7 @@
 
 .questions__item {
     position: relative;
-    background-color: #fff;
+    background-color: var(--text-color);
     color: #1c1a1a;
     font-weight: 700;
     font-size: 24px;
@@ -14,8 +14,8 @@
 }
 
 .questions__item:nth-child(even) {
-    background-color: #440f51;
-    color: #fff;
+    background-color: var(--purple-bg);
+    color: var(--text-color);
 }
 
 .questions__item:last-child {
