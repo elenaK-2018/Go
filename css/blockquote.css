@@ -1,34 +1,84 @@
+.blockquote {
+    display: flex;
+    gap: 9px;
+    margin-bottom: 38px;
+}
+
 .blockquote__title {
     font-size: 44px;
     font-weight: 500;
     line-height: 50px;
     text-transform: uppercase;
-    margin-bottom: 38px;
+    max-width: 420px;
+}
+
+.blockquote__title:not(:first-line) {
+    margin-left: 20px;
 }
 
 .blockquote__span {
-    display: inline-block;
-    padding-left: 33px;
-    max-width: 408px;
-}
-
-.blockquote__title:before,
-.blockquote__title:after {
-    content: url(../img/marks.png);
-    display: inline-block;
-    color: var(--main-color);
-    line-height: 50px;
     font-size: 44px;
-    vertical-align: middle;
-    transform: translateY(-25px);
+    font-weight: 900;
+    line-height: 50px;
+    text-transform: uppercase;
+    color: var(--main-color);
 }
 
-.blockquote__title:after {
-    transform: rotate(180deg);
-    margin-left: -50px;
-    vertical-align: text-bottom;
+.blockquote__span_one {
+    transform: translateY(-10px);
 }
 
-.blockquote__info {
-    margin-left: auto;
+.blockquote__span_two {
+    margin-left: 10px;
+}
+
+@media (max-width: 1100px) {
+    .blockquote {
+        margin-bottom: 13px;
+    }
+
+    .blockquote__title {
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 36px;
+        max-width: 400px;
+    }
+
+    .blockquote__span {
+        font-size: 30px;
+        line-height: 36px;
+    }
+}
+
+@media (max-width: 970px) {
+    .blockquote {
+        margin-bottom: 16px;
+    }
+
+    .blockquote__title {
+        font-size: 32px;
+        line-height: 36px;
+        max-width: 660px;
+    }
+}
+
+@media (max-width: 650px) {
+    .blockquote {
+        margin-bottom: 9px;
+    }
+
+    .blockquote__title {
+        font-size: 18px;
+        line-height: 26px;
+        max-width: 265px;
+    }
+
+    .blockquote__span {
+        font-size: 22px;
+        line-height: 19px;
+    }
+
+    .blockquote__span_one {
+        transform: translateY(-6px);
+    }
 }

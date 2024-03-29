@@ -1,0 +1,33 @@
+.contacts {
+    padding-top: 32px;
+    padding-bottom: 44px;
+}
+
+.contacts__title {
+    margin-bottom: 40px;
+}
+
+.contacts__wrapper {
+    margin-bottom: 145px;
+}
+
+@media (max-width: 1100px) {
+    .contacts {
+        padding-top: 12px;
+        padding-bottom: 19px;
+    }
+}
+
+@media (max-width: 970px) {
+    .contacts {
+        padding-top: 10px;
+        padding-bottom: 18px;
+    }
+}
+
+@media (max-width: 650px) {
+    .contacts {
+        padding-top: 7px;
+        padding-bottom: 24px;
+    }
+}

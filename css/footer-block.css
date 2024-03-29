@@ -4,7 +4,6 @@
     font-weight: 400;
     display: flex;
     justify-content: space-between;
-    padding-bottom: 10px;
 }
 
 .footer-block__developer-name {
@@ -26,4 +25,17 @@
 
 .footer-block__developer-link:active {
     color: var(--purple);
+}
+
+@media (max-width: 650px) {
+    .footer-block {
+        flex-direction: column;
+        gap: 19px;
+        font-size: 12px;
+        align-items: center;
+    }
+
+    .footer-block__developer {
+        text-align: center;
+    }
 }

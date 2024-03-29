@@ -69,3 +69,155 @@
     padding-top: 52px;
     max-width: 680px;
 }
+
+@media (max-width: 1100px) {
+    .reviews__container {
+        max-width: 751px;
+    }
+
+    .reviews__title {
+        margin-bottom: 26px;
+    }
+
+    .reviews__item {
+        gap: 38px;
+    }
+
+    .reviews__item:not(:last-child) {
+        margin-bottom: 40px;
+    }
+
+    .reviews__figure {
+        gap: 21px;
+    }
+
+    .reviews__img {
+        width: 172px;
+        height: 172px;
+    }
+
+    .reviews-overlay:before {
+        width: 172px;
+        height: 172px;
+    }
+
+    .reviews__img_third {
+        object-position: top -50px right 0;
+    }
+
+    .text {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .reviews__text {
+        padding-top: 33px;
+        max-width: 515px;
+    }
+}
+
+@media (max-width: 970px) {
+    .reviews__container {
+        max-width: 561px;
+    }
+
+    .reviews__title {
+        margin-bottom: 31px;
+    }
+
+    .reviews__item {
+        gap: 12px;
+    }
+
+    .reviews__item:not(:last-child) {
+        margin-bottom: 30px;
+    }
+
+    .reviews__figure {
+        gap: 17px;
+    }
+
+    .reviews__img {
+        width: 153px;
+        height: 153px;
+    }
+
+    .reviews-overlay:before {
+        width: 153px;
+        height: 153px;
+    }
+
+    .reviews__img_third {
+        object-position: top -50px right 0;
+    }
+
+    .text {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .reviews__text {
+        padding-top: 30px;
+        max-width: 393px;
+    }
+}
+
+@media (max-width: 650px) {
+    .reviews__container {
+        max-width: 280px;
+    }
+
+    .reviews__title {
+        margin-bottom: 15px;
+    }
+
+    .reviews__item {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .reviews__item:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    .reviews__figure {
+        gap: 9px;
+        align-self: center;
+    }
+
+    .reviews__img {
+        width: 86px;
+        height: 86px;
+        margin: 0 auto;
+    }
+
+    .reviews-overlay:before {
+        width: 86px;
+        height: 86px;
+    }
+
+    .reviews-overlay {
+        width: 86px;
+        align-self: center;
+    }
+
+    .reviews__text {
+        padding-top: 0;
+        width: 100%;
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .reviews__subtitle {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .reviews__img_second {
+        object-position: top -12px right 0;
+    }
+
+    .reviews__img_third {
+        object-position: top -25px right 0;
+    }
+}

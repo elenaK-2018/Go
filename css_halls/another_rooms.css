@@ -1,0 +1,53 @@
+.another-rooms__title {
+    margin-bottom: 40px;
+}
+
+.halls__img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.halls__text {
+    font-size: 30px;
+    line-height: 1.2;
+    white-space: unset;
+    max-width: 158px;
+    text-align: center;
+}
+
+.halls__list {
+    grid-template-columns: repeat(3, 380px);
+}
+
+@media (max-width: 1100px) {
+    .another-rooms__title {
+        margin-bottom: 36px;
+    }
+
+    .halls__list {
+        grid-template-columns: repeat(3, 288px);
+    }
+}
+
+@media (max-width: 970px) {
+    .another-rooms__title {
+        margin-bottom: 30px;
+    }
+
+    .halls__list {
+        grid-template-columns: repeat(3, 224px);
+        gap: 8px;
+    }
+}
+
+@media (max-width: 650px) {
+    .another-rooms__title {
+        margin-bottom: 15px;
+    }
+
+    .halls__list {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+}

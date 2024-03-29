@@ -1,6 +1,7 @@
 @import "normalize.css";
 @import "default.css";
 @import "header.css";
+@import "burger-menu.css";
 @import "nav.css";
 @import "banner.css";
 @import "relaxing.css";
@@ -8,11 +9,11 @@
 @import "booking.css";
 @import "about.css";
 @import "blockquote.css";
-@import "info.css";
-@import "reviews.css";
+@import "info.css"; 
+@import "reviews.css"; 
 @import "questions.css";
 @import "contacts.css";
 @import "address.css";
 @import "social.css";
-@import "footer-block.css";
+@import "footer-block.css"; 
 @import "var.css";

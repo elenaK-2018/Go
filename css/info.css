@@ -1,6 +1,7 @@
 .info {
     width: 378px;
     display: flex;
+    align-items: center;
     gap: 29.72px;
 }
 
@@ -17,4 +18,39 @@
     font-size: 20px;
     font-weight: 400;
     line-height: 28px;
+}
+
+@media (max-width: 1100px) {
+    .info {
+        width: 330px;
+        gap: 35px;
+    }
+
+    .info__photo {
+        width: 70px;
+        height: 70px;
+    }
+
+    .info__cite {
+        width: 225px;
+        font-size: 18px;
+        line-height: 26px;
+    }
+}
+
+@media (max-width: 650px) {
+    .info {
+        gap: 11px;
+    }
+
+    .info__photo {
+        width: 56px;
+        height: 56px;
+    }
+
+    .info__cite {
+        width: 185px;
+        font-size: 12px;
+        line-height: 16px;
+    }
 }
