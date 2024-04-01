@@ -19,7 +19,7 @@
     font-size: 28px;
     font-weight: 400;
     line-height: 50px;
-    margin-left: 100px;
+    padding-left: 100px;
     margin-bottom: 30px;
 }
 
@@ -45,8 +45,7 @@
 }
 
 .banner__item_one {
-    width: 193px;
-    height: 209px;
+    max-width: 193px;
 }
 
 .first-letter {
@@ -58,8 +57,7 @@
 }
 
 .banner__item_two {
-    width: 166px;
-    height: 174px;
+    max-width: 166px;
 }
 
 .first-word {
@@ -148,8 +146,7 @@
     }
 
     .banner__item_one {
-        width: 168px;
-        height: 173px;
+        max-width: 168px;
     }
 
     .first-letter {
@@ -158,8 +155,7 @@
     }
 
     .banner__item_two {
-        width: 140px;
-        height: 145px;
+        max-width: 140px;
     }
 
     .first-word {
@@ -198,7 +194,7 @@
     .banner__description {
         font-size: 18px;
         line-height: 24px;
-        margin-left: 67px;
+        padding-left: 67px;
         margin-bottom: 50px;
     }
 
@@ -217,8 +213,7 @@
     }
 
     .banner__item_one {
-        width: 103px;
-        height: 107px;
+        max-width: 103px;
     }
 
     .first-letter {
@@ -227,8 +222,7 @@
     }
 
     .banner__item_two {
-        width: 89px;
-        height: 92px;
+        max-width: 89px;
     }
 
     .first-word {
@@ -266,7 +260,7 @@
     .banner__description {
         font-size: 10px;
         line-height: 14px;
-        margin-left: 19px;
+        padding-left: 19px;
         margin-bottom: 10px;
     }
 
@@ -285,8 +279,7 @@
     }
 
     .banner__item_one {
-        width: 65px;
-        height: 59px;
+        max-width: 65px;
     }
 
     .first-letter {
@@ -295,8 +288,7 @@
     }
 
     .banner__item_two {
-        width: 54px;
-        height: 53px;
+        max-width: 54px;
     }
 
     .first-word {

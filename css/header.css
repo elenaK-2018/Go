@@ -8,11 +8,12 @@
     color: var(--text-color);
     border: 3px solid var(--violet);
     border-radius: 10px;
-    padding: 12px 32px 13px;
+    padding: 12px 34px 13px;
     font-size: 22px;
     line-height: 30px;
     text-transform: uppercase;
     transition: 0.4s ease-in-out;
+    align-self: center;
 }
 
 .header__button:hover {
@@ -22,12 +23,11 @@
 
 .header__button:focus {
     background-color: var(--main-color);
-    border: none;
 }
 
 .header__button:active {
     background-color: var(--purple);
-    border: 1px solid var(--black);
+    border: 3px solid transparent;
 }
 
 @media (max-width: 1100px) {

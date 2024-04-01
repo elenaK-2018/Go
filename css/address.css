@@ -6,31 +6,36 @@
     margin-bottom: 39px;
 }
 
-.address__icon {
-    color: var(--violet);
-    width: 35px;
-    height: 32px;
+.address__item {
+    padding-left: 60px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
 }
 
 .address__item_location {
-    display: flex;
-    gap: 27px;
-    margin-bottom: 38px;
-    align-items: center;
+    background-image: url("../icons/location.svg");
+    margin-bottom: 39px;
+    background-size: 32px;
 }
 
 .address__text {
+    display: block;
     max-width: 200px;
 }
 
 .address__item_tel {
+    background-image: url("../icons/phone.svg");
     margin-bottom: 11px;
 }
 
+.address__item_email {
+    background-image: url("../icons/e-mail.svg");
+}
+
 .address__link {
-    display: flex;
-    gap: 27px;
     transition: color 0.4s ease-in-out;
+    width: max-content;
 }
 
 .address__link:hover,
@@ -47,44 +52,46 @@
         margin-bottom: 40px;
     }
 
+    .address__item {
+        padding-left: 39px;
+    }
+
     .address__item_location {
-        gap: 14px;
         margin-bottom: 40px;
+        background-image: url("../icons/location_small.svg");
     }
 
     .address__item_tel {
         margin-bottom: 7px;
+        background-image: url("../icons/phone_small.svg");
     }
 
-    .address__link {
-        gap: 14px;
-    }
-
-    .address__icon {
-        width: 26px;
-        height: 26px;
+    .address__item_email {
+        background-image: url("../icons/e-mail_small.svg");
     }
 }
 
 @media (max-width: 970px) {
     .address {
         margin-bottom: 0;
+        text-align: center;
+    }
+
+    .address__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .address__item_location {
-        text-align: center;
         margin-bottom: 27px;
-        align-items: start;
-        gap: 10px;
+        background-size: 26px;
+        background-position: top left 50px;
     }
 
     .address__item_tel {
         margin-bottom: 27px;
-    }
-
-    .address__link {
-        gap: 10px;
-        justify-content: center;
+        max-width: 232px;
     }
 }
 
@@ -94,15 +101,27 @@
         line-height: 18px;
     }
 
+    .address__link {
+        align-items: center;
+    }
+
+    .address__item {
+        padding-left: 25px;
+    }
+
     .address__item_location {
         margin-bottom: 10px;
+        background-image: url("../icons/location_mb.svg");
+        max-width: 200px;
+        line-height: 27px;
     }
 
     .address__item_tel {
         margin-bottom: 10px;
+        background-image: url("../icons/phone_mb.svg");
     }
 
-    .address__link {
-        align-items: center;
+    .address__item_email {
+        background-image: url("../icons/e-mail_mb.svg");
     }
 }

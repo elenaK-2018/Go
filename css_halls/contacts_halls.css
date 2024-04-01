@@ -23,11 +23,19 @@
         padding-top: 10px;
         padding-bottom: 18px;
     }
+
+    .contacts__wrapper {
+        margin-bottom: 92px;
+    }
 }
 
 @media (max-width: 650px) {
     .contacts {
         padding-top: 7px;
         padding-bottom: 24px;
+    }
+
+    .contacts__wrapper {
+        margin-bottom: 63px;
     }
 }

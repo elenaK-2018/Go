@@ -137,4 +137,8 @@
     .questions__item:nth-child(even):after {
         background-image: url("../icons/open_color_mb.svg");
     }
+
+    .questions__item_size {
+        display: none;
+    }
 }

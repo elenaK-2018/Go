@@ -122,6 +122,7 @@
     display: flex;
     align-items: center;
     cursor: pointer;
+    width: max-content;
 }
 
 .form__label-one:not(:last-child) {
@@ -256,26 +257,16 @@
     color: var(--black);
     cursor: pointer;
     font-size: 18px;
-    line-height: 40px;
+    line-height: 29px;
     font-weight: 400;
     transition: 0.2s ease-in-out;
 }
 
 .form__select-wrap {
+    display: flex;
+    align-items: center;
     position: relative;
     width: 300px;
-}
-
-.form__select-wrap:after {
-    content: "";
-    position: absolute;
-    width: 23px;
-    height: 17px;
-    right: 19px;
-    top: 19px;
-    background-image: url(../icons/triangle.svg);
-    background-repeat: no-repeat;
-    pointer-events: none;
 }
 
 .form__select:focus {
@@ -284,6 +275,10 @@
 
 .form__input-third:focus {
     outline: 2px solid var(--violet);
+}
+
+.form__field-data:focus {
+    outline: 2px solid var(--violet);      /*не работает */
 }
 
 .form__input-third_center {
@@ -344,7 +339,6 @@
 
 .booking__button:active {
     background-color: var(--light);
-    border: none;
     color: var(--main-color);
 }
 
@@ -634,6 +628,7 @@
     .form__field-data {
         font-size: 14px;
         line-height: 18px;
+        height: 52px;
     }
 
     .form__triangle {
