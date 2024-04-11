@@ -317,7 +317,7 @@
     margin-bottom: 40px;
 }
 
-.booking__button {
+.btn {
     background-color: var(--text-color);
     color: var(--main-color);
     border-radius: 10px;
@@ -331,13 +331,13 @@
     transition: 0.4s ease-in-out;
 }
 
-.booking__button:hover,
-.booking__button:focus {
+.btn:hover,
+.btn:focus {
     background-color: var(--light);
     border: 3px solid var(--main-color);
 }
 
-.booking__button:active {
+.btn:active {
     background-color: var(--light);
     color: var(--main-color);
 }

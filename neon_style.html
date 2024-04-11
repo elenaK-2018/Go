@@ -6,6 +6,8 @@
     <title>Neon Style</title>
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="css_halls/style_halls.css">
+    <script defer src="js/jquery-3.7.1.min.js"></script>
+    <script defer src="js/script.js"></script>
 </head>
 
 <body>
@@ -223,6 +225,32 @@
                 </div>                 
             </div>                
         </section>
-    </footer> 
+    </footer>
+    
+    <article class="modal-order">
+        <div class="modal-order__wrapper">   
+            <h2 class="modal-order__title">Заказать&nbsp;звонок</h2>
+            <button class="modal-order__close">
+                <svg width="42" height="42" viewbox="0 0 42 42" fill="currentColor">
+                    <rect y="38.4407" width="54.3632" height="5.03363" rx="2" transform="rotate(-45 0 38.4407)"/>
+                    <rect x="3.55957" width="54.3632" height="5.03363" rx="2" transform="rotate(45 3.55957 0)"/>
+                    </svg>                    
+            </button>
+
+            <form class="modal-order__form">
+                <label class="modal-order__label">
+                    <span class="modal-order__text">Имя</span>
+                    <input class="modal-order__input" type="text" name="name" required>
+                </label>
+
+                <label class="modal-order__label">
+                    <span class="modal-order__text">Телефон</span>
+                    <input class="modal-order__input" type="tel" name="telephone" required>
+                </label>
+
+                <button class="modal-order__submit btn" type="submit">Пoзвонить&nbsp;мне</button>
+            </form>
+        </div>
+    </article>
 </body>
 </html>
