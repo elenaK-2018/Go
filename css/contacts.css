@@ -17,7 +17,7 @@
     margin-bottom: 54px;
 }
 
-.map {
+.map-container {
     max-width: 680px;
 }
 
@@ -35,7 +35,7 @@
         margin-bottom: 26px;
     }
 
-    .map {
+    .map-container {
         max-width: 542px;
         min-height: 274px;
     }
@@ -67,10 +67,9 @@
         margin-bottom: 30px;
     }
 
-    .map {
+    .map-container {
         max-width: 688px;
         min-height: 337px;
-        object-fit: cover;
     }
 }
 
@@ -93,7 +92,7 @@
         gap: 10px;
     }
 
-    .map {
+    .map-container {
         min-height: 194px;
     }
 }

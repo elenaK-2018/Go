@@ -1,7 +1,9 @@
 document.addEventListener( 'click', event => {        // Код для активации focus в браузере Safari
     if (event.target.matches('button')) {        
         event.target.focus()    
-    }});    
+    }}); 
+    
+    // модальное окно
 
     const modalBtn = $('.header__button');
     const modalClose = $('.modal-order__close');
@@ -42,6 +44,7 @@ document.addEventListener( 'click', event => {        // Код для акти�
         })
     });
 
+    // второй способ
 
     // modalForm.submit(function (event) {
     //     event.preventDefault();
@@ -55,4 +58,79 @@ document.addEventListener( 'click', event => {        // Код для акти�
     //                     return err;
     //                 });
     // });
+
+
+    // аккордеон
+
+    const questionsList = $('.questions__list');
+
+    questionsList.accordion({
+        active: true,
+        collapsible: true,
+        heightStyle: 'content',
+        icons: {
+            header: 'questions__accord',
+            activeHeader: 'questions__accord-active',
+            hoverHeader: 'questions__accord-hover',
+        }
+    });
+
+    // карта
+
+    async function initMap() {
+        await ymaps3.ready;
+
+        const {YMap, YMapDefaultSchemeLayer, YMarker} = ymaps3;
+
+        const map = new YMap(
+            document.getElementById('map'),
+            {
+                location: {
+                    center: [37.565021, 55.723151],
+                    zoom: 17
+                }
+            }
+        );
+
+        map.addChild(new YMapDefaultSchemeLayer());
+
+        const markerElement = document.createElement('div');
+        markerElement.className = 'marker-class';
+        markerElement.innerText = "I'm marker!";
+
+        const marker = new YMarker(
+            {
+                source: 'markerSource',
+                coordinates: [37.565021, 55.723151],
+                draggable: true,
+                mapFollowsOnDrag: true
+            },
+            markerElement
+        );
+
+        // map.addChild(marker);
+
+        // map.events.add('sizechange', function () {
+        //     map.container.fitToViewport();
+        // });
+    }
+
+    initMap();
+
+
+
+    // function init() {
+    //     let map = new ymaps.Map('map', {
+    //         center: [55.723151, 37.565021],
+    //         zoom:17
+    //     }); 
+
+    //     let marker = new ymaps.Placemark([37.565021, 55.723151], {}, {
+
+    //     }) 
+
+    //     map.getObjects.add(marker);
+    // }
+
+    // ymaps.ready(init);
 

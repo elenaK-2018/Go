@@ -27,7 +27,9 @@
         <meta name="theme-color" content="#ffffff"/>
         <title>Game Over</title>
         <link rel="stylesheet" href="css/style.css"/>
+        <script defer src="https://api-maps.yandex.ru/v3/?apikey=e2853b9e-33ca-41f2-8b1c-9da36798593d&lang=ru_RU"></script>
         <script defer src="js/jquery-3.7.1.min.js"></script>
+        <script defer src="js/jquery-ui.min.js"></script>
         <script defer src="js/script.js"></script>
     </head>
 
@@ -513,17 +515,34 @@
                     <h2 class="title questions__title">Частые вопросы</h2>
                     <ul class="questions__list">
                         <li class="questions__item">
-                            Можно ли забронировать комнату онлайн?
+                            <h3 class="questions__button">
+                                <span class="questions__description">Можно ли забронировать комнату онлайн?</span>
+                            </h3>
+                            <p class="questions__text">Да, забронировать комнату вы можете онлайн, заполнив форму на нашем сайте. Также вы можете забронировать комнату позвонив по телефону <b>8 (999) 958 - 48 - 38</b></p>
                         </li>
                         <li class="questions__item">
-                            Могут ли вернуть деньги за бронь?
+                            <h3 class="questions__button">
+                                <span class="questions__description">Могут ли вернуть деньги за бронь?</span>
+                            </h3>
+                            <p class="questions__text">Да, забронировать комнату вы можете онлайн, заполнив форму на нашем сайте. Также вы можете забронировать комнату позвонив по телефону <b>8 (999) 958 - 48 - 38</b></p>
                         </li>
                         <li class="questions__item">
-                            Какая комната самая популярная?
+                            <h3 class="questions__button">
+                                <span class="questions__description">Какая комната самая популярная?</span>
+                            </h3>
+                            <p class="questions__text">Да, забронировать комнату вы можете онлайн, заполнив форму на нашем сайте. Также вы можете забронировать комнату позвонив по телефону <b>8 (999) 958 - 48 - 38</b></p>
                         </li>
-                        <li class="questions__item">Как получить VIP карту?</li>
+                        <li class="questions__item">
+                            <h3 class="questions__button">
+                                <span class="questions__description">Как получить VIP карту?</span>
+                            </h3>
+                            <p class="questions__text">Да, забронировать комнату вы можете онлайн, заполнив форму на нашем сайте. Также вы можете забронировать комнату позвонив по телефону <b>8 (999) 958 - 48 - 38</b></p>
+                        </li>
                         <li class="questions__item questions__item_size">
-                            Какая комната самая популярная?
+                            <h3 class="questions__button">
+                                <span class="questions__description">Какая комната самая популярная?</span>
+                            </h3>
+                            <p class="questions__text">Да, забронировать комнату вы можете онлайн, заполнив форму на нашем сайте. Также вы можете забронировать комнату позвонив по телефону <b>8 (999) 958 - 48 - 38</b></p>
                         </li>
                     </ul>
                 </div>
@@ -621,8 +640,10 @@
                                     </a>
                                 </li>
                             </ul>                     
-                        </div>                    
-                        <img src="img/map.jpg" alt="Карта" class="map">
+                        </div>
+                        <div class="map-container">
+                            <div id="map" style="width: 680px; height: 274px"></div>   
+                        </div>
                     </div>
 
                     <div class="footer-block">
