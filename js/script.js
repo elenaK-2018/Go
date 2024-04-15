@@ -98,7 +98,7 @@ async function initMap() {
     const markerElement = document.createElement('div');
     markerElement.className = 'marker-class';
     const img = document.createElement('img');
-    img.src = '../icons/map-marker.svg';
+    img.src = 'icons/map-marker.svg';
     img.alt = 'Маркер';
     markerElement.style.width = '35px'; 
     markerElement.style.height = '35px';
