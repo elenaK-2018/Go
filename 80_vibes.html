@@ -11,6 +11,10 @@
     <script defer src="https://api-maps.yandex.ru/v3/?apikey=e2853b9e-33ca-41f2-8b1c-9da36798593d&lang=ru_RU"></script>
     <script defer src="js/jquery-3.7.1.min.js"></script>
     <script defer src="js/jquery-ui.min.js"></script>
+    <script defer src="js/js.cookie.min.js"></script>
+    <script defer src="js/inputmask.min.js"></script>
+    <script defer src="js/axios.min.js"></script>
+    <script defer src="js/just-validate.production.min.js"></script>
     <script defer src="js/script.js"></script>
 </head>
 
@@ -244,12 +248,12 @@
             <form class="modal-order__form">
                 <label class="modal-order__label">
                     <span class="modal-order__text">Имя</span>
-                    <input class="modal-order__input" type="text" name="name" required>
+                    <input class="modal-order__input modal-order__input_text" type="text" name="name" id="name" required>
                 </label>
 
                 <label class="modal-order__label">
                     <span class="modal-order__text">Телефон</span>
-                    <input class="modal-order__input" type="tel" name="telephone" required>
+                    <input class="modal-order__input modal-order__input_tel" type="tel" name="telephone" id="tel" required>
                 </label>
 
                 <button class="modal-order__submit btn" type="submit">Пoзвонить&nbsp;мне</button>

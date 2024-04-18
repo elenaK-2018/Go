@@ -28,24 +28,83 @@ modalOverlay.on('click', function(event) {
 	}
 });
 
-modalForm.submit(function (event) {
-    event.preventDefault();
-    $.ajax({
-        url: 'https://jsonplaceholder.typicode.com/posts',
-        // url: 'https://postman-echo.com/post',
-        type: 'POST',
-        data: $(this).serialize(),
-        success(data) {
-            modalTitle.text('Ваша заявка принята, номер заявки ' + data.id);  
-            modalForm.slideUp(300);
-        },
-        error() {
-            modalTitle.text('Что-то пошло не так, попробуйте позже!');
-        }
-    })
-});
+ // маска, валидация 
 
-// второй способ
+const inputTel = document.querySelector('.modal-order__input_tel');    
+const telMask = new Inputmask('+7 (999)-999-99-99');
+    
+telMask.mask(inputTel);
+    
+const justValidate = new JustValidate('.modal-order__form');
+    
+justValidate
+    .addField('#name', [
+        {
+            rule: 'required',
+            errorMessage: 'Как вас зовут?',
+        },
+        {
+            rule: 'minLength',
+            value: 3,
+            errorMessage: 'Не короче 3 символов',
+        },
+        {
+            rule: 'maxLength',
+            value: 30,
+            errorMessage: 'Слишком длинное имя',
+        },
+        ])
+    .addField('#tel', [
+        {
+            rule: 'required',
+            errorMessage: 'Укажите ваш телефон',
+        },
+        {
+            validator: (value) => {
+            const phone = inputTel.inputmask.unmaskedvalue()
+            console.log(phone)
+            return !!(Number(phone) && phone.length === 10);
+        },
+            errorMessage: 'Телефон не корректный!',
+        },
+        ])
+    .onSuccess(event => {
+        const target = event.target;
+        axios.post('https://jsonplaceholder.typicode.com/posts', {
+        // axios.post('https://postman-echo.com/post', {
+            name: target.name.value,
+            tel: inputTel.inputmask.unmaskedvalue(),
+        })
+            .then(response => {
+                target.reset();
+            modalTitle.textContent = 'Спасибо ваша заявка принята, номер заявки ${response.data.id}!';
+            })
+            .catch(err => {
+                modalTitle.textContent = 'Что-то пошло не так, попробуйте позже!';
+            })
+        });
+    
+
+        // первый способ
+
+// modalForm.submit(function (event) {
+//     event.preventDefault();
+//     $.ajax({
+//         url: 'https://jsonplaceholder.typicode.com/posts',
+//         type: 'POST',
+//         data: $(this).serialize(),
+//         success(data) {
+//             modalTitle.text('Ваша заявка принята, номер заявки ' + data.id);  
+//             modalForm.slideUp(300);
+//         },
+//         error() {
+//             modalTitle.text('Что-то пошло не так, попробуйте позже!');
+//         }
+//     })
+// });
+
+
+     // второй способ
 
 // modalForm.submit(function (event) {
 //     event.preventDefault();
@@ -179,5 +238,25 @@ body.on('click', '.overlay', function() {
 link.on('click', function() {
     closeMenu()
 });
+
+
+    // cookie
+
+const cookieAlert = document.querySelector('.alert-cookie'); 
+const cookieButton = document.querySelector('.alert-cookie__button'); 
+
+cookieButton.addEventListener('click', () => {
+    cookieAlert.classList.remove('alert-cookie_no-ready');
+    Cookies.set('dom-ready-cookie', 'true', {
+        expires: 10,
+    })
+});
+
+if(!Cookies.get('dom-ready-cookie')) {
+    cookieAlert.classList.add('alert-cookie_no-ready');
+};
+
+
+
 
 
