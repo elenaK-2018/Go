@@ -6,6 +6,8 @@
     <title>Wild West</title>
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="css_halls/style_halls.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css"/>
+    <script defer src="js/swiper-bundle.min.js"></script>
     <script defer src="https://api-maps.yandex.ru/v3/?apikey=e2853b9e-33ca-41f2-8b1c-9da36798593d&lang=ru_RU"></script>
     <script defer src="js/jquery-3.7.1.min.js"></script>
     <script defer src="js/jquery-ui.min.js"></script>
@@ -24,14 +26,16 @@
                 
                 <img class="header__logo" src="img/logo.svg" alt="Логотип GO" height="66">
 
-                <nav class="nav header__nav">
-                    <ul class="nav__list">
+                <nav class="nav nav-mobile">
+                    <ul class="nav__list nav-mobile__list">
                         <li class="nav__item"><a class="nav__link" href="index.html#halls">Залы</a></li>                                       
                         <li class="nav__item"><a class="nav__link" href="index.html#about">О нас</a></li>
                         <li class="nav__item"><a class="nav__link" href="index.html#booking">Бронь</a></li>
                         <li class="nav__item"><a class="nav__link" href="index.html#reviews">Отзывы</a></li>
                         <li class="nav__item"><a class="nav__link" href="#contacts">Контакты</a></li>
                     </ul>
+
+                    <button class="header__button header__button__mobile" type="submit">Заказать звонок</button>
                 </nav>
 
                 <button class="header__button" type="submit">Заказать звонок</button>

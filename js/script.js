@@ -32,6 +32,7 @@ modalForm.submit(function (event) {
     event.preventDefault();
     $.ajax({
         url: 'https://jsonplaceholder.typicode.com/posts',
+        // url: 'https://postman-echo.com/post',
         type: 'POST',
         data: $(this).serialize(),
         success(data) {
@@ -117,3 +118,66 @@ async function initMap() {
 }
 
 initMap();
+
+
+    // слайдер
+
+new Swiper('.swiper', {
+    slidesPerView: 1,
+    loop: true,
+    spaceBetween: 30,
+    grapCursor: true,
+    speed: 1000,
+    navigation: {
+        nextEl: '.button-right',
+        prevEl: '.button-left',
+    },
+    autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+    },
+    mousewheel: true,
+    keyboard: true,
+});
+
+
+    // бургер-меню
+
+const burgerMenu = $('.burger-menu');
+const menuList = $('.nav-mobile');
+const body = $('body');
+const link = $('.nav__link');
+
+function openMenu() {
+    burgerMenu.addClass('active');
+    menuList.addClass('active');
+    body.addClass('lock');
+    body.append($('<div></div>').addClass('overlay'));
+}
+
+function closeMenu() {
+    burgerMenu.removeClass('active');
+    menuList.removeClass('active');
+    body.removeClass('lock');
+    $('.overlay').remove();
+}
+
+burgerMenu.on('click', function() {
+    const open = burgerMenu.hasClass('active');
+
+    if (open) {
+        closeMenu()
+    } else {
+        openMenu()
+    }
+});
+
+body.on('click', '.overlay', function() {
+    closeMenu()
+});
+
+link.on('click', function() {
+    closeMenu()
+});
+
+

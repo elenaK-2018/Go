@@ -37,7 +37,70 @@
 }
 
 @media (max-width: 970px) {
-    .nav {
-        display: none;
+    .nav-mobile {
+        position: absolute;
+        top: -100%;
+        left: 0;
+        right: 0;
+        z-index: 30;
+        min-height: 383px;
+        background-color: var(--bg-color);
+        transition: 0.5s ease-in-out;
+    }
+
+    .nav-mobile.active {
+        top: 107px;
+        transition: 0.5s ease-in-out;
+    }
+
+    .nav-mobile__list {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        overflow: auto;   /*не работает*/
+        text-align: center;
+        padding-top: 39px;
+        padding-bottom: 43px;
+    }
+
+    .nav__link {
+        display: block;
+        padding-top: 19px;
+        padding-bottom: 19px;
+        font-size: 22px;
+        color: var(--text-color);
+    }
+
+    .nav__link:hover {
+        background-color: var(--main-color);
+    }
+
+    .nav__link:active {
+        background-color: var(--violet);
+    }
+}
+
+@media (max-width: 650px) {
+    .nav-mobile {
+        min-height: 352px;
+    }
+
+    .nav-mobile.active {
+        top: 71px;
+    }
+
+    .nav-mobile__list {
+        padding-top: 23px;
+        padding-bottom: 25px;
+    }
+
+    .nav__link {
+        padding-top: 13px;
+        padding-bottom: 13px;
+        font-size: 14px;
+    }
+
+    .nav__item {
+        height: 48px;
     }
 }

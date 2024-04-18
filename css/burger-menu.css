@@ -4,28 +4,29 @@
     width: 54px;
     height: 29px;
     background-color: transparent;
-    z-index: 50;
+    z-index: 20;
+    align-self: center;
+    will-change: transform;
 }
 
 .burger-menu__item {
     display: block;
     position: absolute;
     width: 100%;
-    top: 50%;
     height: 5px;
     border-radius: 2px;
     left: 0;
     background-color: var(--main-color);
-    transition: background-color 0.5s, opacity 0.25s, transform 0.5s;
+    transition:  0.5s ease-in-out;
     will-change: transform;
 }
 
 .burger-menu__item:nth-child(1) {
-    transform: translateY(-12px);
+    transform: translateY(-10px);
 }
 
 .burger-menu__item:nth-child(3) {
-    transform: translateY(12px);
+    transform: translateY(10px);
     width: 31px;
 }
 
@@ -33,59 +34,36 @@
     .burger-menu {
         display: block;
     }
+
+    /* .burger-menu.active body {
+        background-color: rgba(27, 26, 27, 0.7);
+    } */
+
+    .burger-menu.active .burger-menu__item:nth-child(2) {
+        background-color: transparent;
+    }
+
+    .burger-menu.active .burger-menu__item:nth-child(1) {
+        transform: rotate(-45deg);
+    }
+
+    .burger-menu.active .burger-menu__item:nth-child(3) {
+        transform: rotate(45deg);
+        width: 54px;
+    }
 }
 
 @media (max-width: 650px) {
-  .burger-menu {
-    width: 39px;
-    height: 20px;
+    .burger-menu {
+        width: 39px;
+        height: 20px;
+    }
+
+    .burger-menu__item {
+        height: 3.45px;
+    }
+
+    .burger-menu.active .burger-menu__item:nth-child(3) {
+        width: 39px;
+    }
 }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.header__burger {
-    display: none;
-    position: relative;
-    width: 40px;
-    height: 40px;
-    background-color: transparent;
-    z-index: 60;
-  }
-  
-  .header__burger span {
-    display: block;
-    position: absolute;
-    width: 100%;
-    top: 50%;
-    height: 3px;
-    left: 0;
-    background-color: var(--color-light);
-    transition: background-color 0.5s, opacity 0.25s, transform 0.5s;
-    will-change: transform;
-  }
-  
-  .header__burger:hover span {
-    background-color: var(--color-grey);
-    cursor: pointer;
-  }
-  
-  .header__burger span:nth-child(1) {
-    transform: translateY(-12px);
-  }
-  
-  .header__burger span:nth-child(3) {
-    transform: translateY(12px);
-  }
-  
