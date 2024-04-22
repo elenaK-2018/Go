@@ -1,6 +1,7 @@
 html {
     position: relative;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 *,
@@ -95,8 +96,53 @@ fieldset {
 .overlay {
     position: fixed;
     inset: 0;
-    background-color: rgba(27, 26, 27, 0.7);
+    background-color: var(--background);
     z-index: 5;
+}
+
+.just-validate-error-label {
+    font-size: 18px;
+    position: absolute;
+    top: 67px;
+}
+
+.form__label-third_small.just-validate-error-label {
+    top: 57px;
+}
+
+.alert-cookie {
+    position: fixed;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 90%;
+    min-height: 110px;
+    border: 3px solid var(--background);
+    padding: 16px;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.7);
+    display: none;
+    z-index: 100;
+}
+
+.alert-cookie__text {
+    font-size: 1rem;
+    line-height: 24px;
+    font-weight: 500;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.alert-cookie__button {
+    display: block;
+    width: 30%;
+    font-size: 1rem;
+    line-height: 24px;
+    font-weight: 700;
+    background-color: blueviolet;
+    border-radius: 4px;
+    padding: 7px 5px;
 }
 
 @media (max-width: 1100px) {
@@ -122,6 +168,15 @@ fieldset {
     .title {
         font-size: 30px;
         line-height: 40px;
+    }
+
+    .alert-cookie {
+        min-height: 80px;
+    }
+
+    .alert-cookie__button {
+        font-size: 0.9rem;
+        line-height: 22px;
     }
 }
 
@@ -152,6 +207,26 @@ fieldset {
     body.lock {
         overflow: hidden;
     }
+
+    .alert-cookie {
+        border: 2px solid var(--background);
+        padding: 10px;
+        border-radius: 3px;
+    }
+
+    .alert-cookie__text {
+        font-size: 0.8rem;
+        line-height: 20px;
+    }
+
+    .alert-cookie__button {
+        width: 40%;
+        font-size: 0.8rem;
+        line-height: 18px;
+        font-weight: 600;
+        border-radius: 3px;
+        padding: 4px 3px;
+    }
 }
 
 @media (max-width: 650px) {
@@ -177,5 +252,21 @@ fieldset {
     .title {
         font-size: 14px;
         line-height: 18px;
+    }
+
+    .just-validate-error-label {
+        font-size: 14px;
+        top: 63px;
+    }
+
+    .alert-cookie__text {
+        font-size: 0.7rem;
+        line-height: 16px;
+    }
+
+    .alert-cookie__button {
+        width: 40%;
+        font-size: 0.7rem;
+        line-height: 16px;
     }
 }

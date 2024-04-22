@@ -10,33 +10,40 @@ const modalClose = $('.modal-order__close');
 const modalOverlay = $('.modal-order');
 const modalWrapper = $('.modal-order__wrapper');
 const modalForm = $('.modal-order__form');
-const modalTitle = $('.modal-order__title');
+const body = $('body');
+const originalModalForm = modalForm.html();
 
 modalBtn.on('click', function() {
     modalOverlay.show(400);
-    $('body').addClass('no-scroll');
+    body.addClass('no-scroll');
 });
 
 modalClose.on('click', function() {
     modalOverlay.hide(400);
-    $('body').removeClass('no-scroll');
+    body.removeClass('no-scroll');
+    modalForm.html(originalModalForm);
 });
 
 modalOverlay.on('click', function(event) {
-	if ($(event.target).closest(modalWrapper).length == 0) {
-		$(this).fadeOut();					
+	if ($(event.target).closest(modalWrapper).length === 0) {
+		$(this).fadeOut();
+        body.removeClass('no-scroll');
+        modalForm.html(originalModalForm);
 	}
 });
+   // маска, валидация 
 
- // маска, валидация 
-
+const justValidate = new JustValidate('.modal-order__form', {
+    errorLabelStyle: {
+        color: 'white'
+    }
+});
 const inputTel = document.querySelector('.modal-order__input_tel');    
-const telMask = new Inputmask('+7 (999)-999-99-99');
-    
-telMask.mask(inputTel);
-    
-const justValidate = new JustValidate('.modal-order__form');
-    
+const telMask = new Inputmask('+7(999)999-99-99'); 
+const modalTitle = document.querySelector('.modal-order__title');
+
+telMask.mask(inputTel);  
+
 justValidate
     .addField('#name', [
         {
@@ -53,7 +60,7 @@ justValidate
             value: 30,
             errorMessage: 'Слишком длинное имя',
         },
-        ])
+    ])
     .addField('#tel', [
         {
             rule: 'required',
@@ -62,12 +69,12 @@ justValidate
         {
             validator: (value) => {
             const phone = inputTel.inputmask.unmaskedvalue()
-            console.log(phone)
+            console.log(phone);
             return !!(Number(phone) && phone.length === 10);
         },
             errorMessage: 'Телефон не корректный!',
         },
-        ])
+    ])
     .onSuccess(event => {
         const target = event.target;
         axios.post('https://jsonplaceholder.typicode.com/posts', {
@@ -75,50 +82,182 @@ justValidate
             name: target.name.value,
             tel: inputTel.inputmask.unmaskedvalue(),
         })
-            .then(response => {
-                target.reset();
-            modalTitle.textContent = 'Спасибо ваша заявка принята, номер заявки ${response.data.id}!';
+        .then(response => {
+        // console.log(response)
+        target.reset();
+        modalTitle.textContent = `Спасибо ваша заявка принята, номер заявки ${response.data.id}!`;
+        })
+        .catch(err => {
+        console.error(err);
+        modalTitle.textContent = 'Что-то пошло не так, попробуйте позже!';
+        })
+        closeMenu();
+    });
+
+
+    // дата и время
+
+const dateLabels = document.querySelectorAll('.form__label-third_small');
+
+dateLabels.forEach(function(label) {
+    label.addEventListener('click', function(event) {
+        const clickedLabel = event.currentTarget;
+        const dateText = clickedLabel.querySelector('.form__field-data');
+        const formTriangle = clickedLabel.querySelector('.form__triangle');
+        const formInput = clickedLabel.querySelector('.form__input-data');
+        
+        dateText.innerText = '';
+        formTriangle.style.display = 'none';
+        formInput.style.opacity = '1';
+    });
+});
+
+$(document).ready( function() {
+    let now = new Date();
+    let day = ("0" + now.getDate()).slice(-2);
+    let month = ("0" + (now.getMonth() + 1)).slice(-2);
+    let today = now.getFullYear()+"-"+(month)+"-"+(day) ;
+
+    $('#datePicker').val(today);
+});
+
+
+  // select
+
+    const select = document.querySelector('.form__select-wrap');
+    const selectText = document.querySelector('.form__select-text');
+    const selectForm = document.querySelector('.form__select');
+
+    select.addEventListener('click', () => {
+        selectText.innerText = '';
+        selectForm.style.opacity = '1';
+    })
+
+
+     // валидация формы
+
+const justValidateForm = new JustValidate('.form', {
+    errorLabelStyle: {
+        color: 'red',
+        top: '20px',
+        left: '5px',
+        fontSize: '10px' 
+    }
+});
+const inputTelForm = document.querySelector('#form-tel');    
+const telMaskForm = new Inputmask('+7(999)999-99-99');
+const bookingTitle = document.querySelector('.booking__title');
+    
+telMaskForm.mask(inputTelForm);
+
+justValidateForm
+    .addField('.form__input-btn', [
+        {
+            rule: 'required',
+            errorMessage: 'Выберите зал',
+        },
+    ])
+    .addField('.form__input', [
+        {
+            rule: 'required',
+            errorMessage: 'Выберите развлечение',
+        },
+    ])
+    .addField('#datePicker', [
+        {
+            rule: 'required',
+            errorMessage: 'Выберите дату',        // не работает
+        },
+    ])
+    .addField('#appt', [
+        {
+            rule: 'required',
+            errorMessage: 'Выберите время',    
+        },
+    ])
+    .addField('#form-name', [
+        {
+            rule: 'required',
+            errorMessage: 'Как вас зовут?',
+        },
+        {
+            rule: 'minLength',
+            value: 3,
+            errorMessage: 'Не короче 3 символов',
+        },
+        {
+            rule: 'maxLength',
+            value: 30,
+            errorMessage: 'Слишком длинное имя',
+        },
+    ])
+    .addField('#form-last_name', [
+        {
+            rule: 'required',
+            errorMessage: 'Какая ваша фамилия?',
+        },
+        {
+            rule: 'minLength',
+            value: 3,
+            errorMessage: 'Не короче 3 символов',
+        },
+        {
+            rule: 'maxLength',
+            value: 30,
+            errorMessage: 'Слишком длинная фамилия',
+        },
+    ])
+    .addField('#form-tel', [
+        {
+            rule: 'required',
+            errorMessage: 'Укажите ваш телефон',
+        },
+        {
+            validator: (value) => {
+            const phone = inputTelForm.inputmask.unmaskedvalue()
+            console.log(phone);
+            return !!(Number(phone) && phone.length == 10);
+        },
+            errorMessage: 'Телефон не корректный!',
+        },
+    ])
+    .addField('#form-email', [
+        {
+            rule: 'required',
+            errorMessage: 'Укажите ваш e-mail',
+        },
+        {
+            rule: 'email',
+            errorMessage: 'E-mail не корректный!',
+        },
+    ]) 
+    .onSuccess(event => {
+        const target = event.target;
+        axios.post('https://jsonplaceholder.typicode.com/posts', {
+            // axios.post('https://postman-echo.com/post', {
+            name: target.name.value, 
+            lastName: target.last_name.value,
+            phone: target.phone.value,
+            email: target.email.value,
+            halls: target.halls.value,
+            gameConsole: target.game_console.value,
+            tableGames: target.table_games.value,
+            hallsPlus: target.halls_plus.value,
+            date: target.date.value,
+            time: target.time.value,
+            quantity: target.quantity.value,
+        })
+        .then(response => {
+            console.log(response)
+            target.reset();
+            bookingTitle.textContent = `Спасибо ваша заявка принята, номер заявки ${response.data.id}!`;
             })
             .catch(err => {
-                modalTitle.textContent = 'Что-то пошло не так, попробуйте позже!';
+            console.error(err);
+            bookingTitle.textContent = 'Что-то пошло не так, попробуйте позже!';
             })
-        });
+    }) 
     
-
-        // первый способ
-
-// modalForm.submit(function (event) {
-//     event.preventDefault();
-//     $.ajax({
-//         url: 'https://jsonplaceholder.typicode.com/posts',
-//         type: 'POST',
-//         data: $(this).serialize(),
-//         success(data) {
-//             modalTitle.text('Ваша заявка принята, номер заявки ' + data.id);  
-//             modalForm.slideUp(300);
-//         },
-//         error() {
-//             modalTitle.text('Что-то пошло не так, попробуйте позже!');
-//         }
-//     })
-// });
-
-
-     // второй способ
-
-// modalForm.submit(function (event) {
-//     event.preventDefault();
-//     $.post('https://jsonplaceholder.typicode.com/posts', $(this).serialize())
-//                 .then(function(data) {
-//                     console.log(data);
-//                     return data;
-//                 })
-//                 .catch(function(err) {
-//                     console.log(err);
-//                     return err;
-//                 });
-// });
-
 
     // аккордеон
 
@@ -204,7 +343,6 @@ new Swiper('.swiper', {
 
 const burgerMenu = $('.burger-menu');
 const menuList = $('.nav-mobile');
-const body = $('body');
 const link = $('.nav__link');
 
 function openMenu() {
@@ -246,15 +384,22 @@ const cookieAlert = document.querySelector('.alert-cookie');
 const cookieButton = document.querySelector('.alert-cookie__button'); 
 
 cookieButton.addEventListener('click', () => {
-    cookieAlert.classList.remove('alert-cookie_no-ready');
-    Cookies.set('dom-ready-cookie', 'true', {
-        expires: 10,
-    })
+    cookieAlert.style.display = 'none';
 });
 
-if(!Cookies.get('dom-ready-cookie')) {
-    cookieAlert.classList.add('alert-cookie_no-ready');
-};
+let cookies = () => {
+    if (!Cookies.get('hide-cookie')) {
+        setTimeout(() => {
+            cookieAlert.style.display = 'block';
+        }, 1000);
+    }
+
+    Cookies.set('hide-cookie', 'true', {
+    expires: 10
+    });
+}
+
+cookies();
 
 
 

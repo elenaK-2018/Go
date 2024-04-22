@@ -35,10 +35,6 @@
         display: block;
     }
 
-    /* .burger-menu.active body {
-        background-color: rgba(27, 26, 27, 0.7);
-    } */
-
     .burger-menu.active .burger-menu__item:nth-child(2) {
         background-color: transparent;
     }

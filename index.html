@@ -67,7 +67,7 @@
             </div>                   
         </header>
 
-        <main overlay>
+        <main>
             <section class="banner section">
                 <div class="container">
                     <div class="banner__content">
@@ -204,7 +204,6 @@
                         <h2 class="title booking__title">Забронировать зал просто</h2>
                         <form
                             class="form"
-                            action="https://postman-echo.com/post"
                             method="POST">
                             <fieldset class="form__fieldset-block form__fieldset-block_one">
                                 <legend class="form__title">Выбери зал</legend>
@@ -213,7 +212,8 @@
                                         class="form__input-btn"
                                         type="radio"
                                         name="halls"
-                                        value="80's_vibes"/>
+                                        value="80's_vibes"
+                                        required="required"/>
                                     <span class="form__radio-label">80's vibes</span>
                                 </label>
                                 <label class="form__label">
@@ -254,7 +254,8 @@
                                                 class="form__input form__input_ellipse"
                                                 type="radio"
                                                 name="game_console"
-                                                value="play_station"/>
+                                                value="play_station"
+                                                required="required"/>
                                             <span class="form__radio-label-1">Play Station 5</span>
                                         </label>
                                         <label class="form__label-one">
@@ -329,7 +330,7 @@
                                             <input
                                                 class="form__input form__input_square"
                                                 type="radio"
-                                                name="halls-plus"
+                                                name="halls_plus"
                                                 value="karaoke"/>
                                             <span class="form__radio-label-1">Караоке</span>
                                         </label>
@@ -337,7 +338,7 @@
                                             <input
                                                 class="form__input form__input_square"
                                                 type="radio"
-                                                name="halls-plus"
+                                                name="halls_plus"
                                                 value="vr"/>
                                             <span class="form__radio-label-1">VR</span>
                                         </label>
@@ -356,9 +357,13 @@
                                                 <span class="form__field-data">Дата</span>
                                                 <input
                                                 class="form__input-data"
+                                                id="datePicker"
                                                 type="date"
                                                 name="date"
-                                                required/>                                            
+                                                value="____-__-__"
+                                                min="2024-01-31"
+                                                max="2024-06-31"
+                                                required="required"/>                                            
                                                 <svg class="form__triangle" width="21" height="15" viewbox="0 0 19 12" fill="none">
                                                     <path d="M9.5 12L0.406734 0.75L18.5933 0.75L9.5 12Z" fill="#211E1E"/>
                                                 </svg>
@@ -368,9 +373,13 @@
                                                 <span class="form__field-data">Время</span>
                                                 <input
                                                 class="form__input-data"
+                                                id="appt"
                                                 type="time"
                                                 name="time"
-                                                required/>
+                                                min="09:00"
+                                                max="18:00"
+                                                value="__:__"
+                                                required="required"/>
                                                 <svg class="form__triangle" width="21" height="15" viewbox="0 0 19 12" fill="none">
                                                     <path d="M9.5 12L0.406734 0.75L18.5933 0.75L9.5 12Z" fill="#211E1E"/>
                                                 </svg>
@@ -378,8 +387,8 @@
                                         </div>                                
 
                                         <div class="form__select-wrap">
+                                            <span class="form__select-text">Сколько человек</span>
                                             <select class="form__select" name="quantity">
-                                                <option class="form__select-item" value="1">Сколько человек</option>
                                                 <option class="form__select-item" value="2">2</option>
                                                 <option class="form__select-item" value="3">3</option>
                                                 <option class="form__select-item" value="4">4</option>
@@ -401,6 +410,7 @@
                                             <span class="form__field">Имя</span>
                                             <input
                                             class="form__input-third form__input-third_center"
+                                            id="form-name"
                                             type="text"
                                             name="name"
                                             required/>
@@ -410,6 +420,7 @@
                                             <span class="form__field">Фамилия</span>
                                             <input
                                             class="form__input-third form__input-third_center"
+                                            id="form-last_name"
                                             type="text"
                                             name="last_name"
                                             required/>
@@ -421,6 +432,8 @@
                                             <span class="form__field">Телефон</span>
                                             <input
                                             class="form__input-third"
+                                            id="form-tel"
+                                            placeholder="+7(___)___-__-__"
                                             type="tel"
                                             name="phone"
                                             required/>
@@ -430,6 +443,7 @@
                                             <span class="form__field">E-mail</span>
                                             <input
                                             class="form__input-third"
+                                            id="form-email"
                                             type="email"
                                             name="email"
                                             required/>
@@ -579,7 +593,7 @@
             </section>
         </main>
 
-        <footer overlay>
+        <footer>
             <section class="contacts" id="contacts">
                 <div class="container">
                     <h2 class="title contacts__title">Контакты</h2>
@@ -703,7 +717,7 @@
     
                     <label class="modal-order__label">
                         <span class="modal-order__text">Телефон</span>
-                        <input class="modal-order__input modal-order__input_tel" type="tel" name="telephone" id="tel" required>
+                        <input class="modal-order__input modal-order__input_tel" type="tel" name="telephone" id="tel" placeholder="+7(___)___-__-__" required>
                     </label>
     
                     <button class="modal-order__submit btn" type="submit">Пoзвонить&nbsp;мне</button>
@@ -712,7 +726,7 @@
         </article>
 
         <div class="alert-cookie">
-            <p class="alert-cookie__text">Находясь на нашем сайте, вы соглашаетесь с обработкой файлов cookie</p>
+            <p class="alert-cookie__text">Оставаясь на нашем сайте, вы соглашаетесь с обработкой файлов cookies</p>
             <button class="alert-cookie__button" type="button">Ясно, понятно</button>
         </div>
 

@@ -1,5 +1,5 @@
 .section-color {
-    width: 100%;
+    max-width: 100%;
     height: auto;
     padding-top: 80px;
     padding-bottom: 80px;
@@ -197,34 +197,61 @@
     gap: 50px;
 }
 
-.form__label-third_small {
-    width: 134px;
-    position: relative;
-}
-
 .form__label-third {
+    position: relative;
     line-height: 16px;
 }
 
-.form__input-data {
-    width: 100%;
+.form__label-third_small {
+    width: 134px;
     height: 52px;
-    padding: 0 15px 0 0;
-    position: absolute;
+}
+
+.form__input-data {
+    height: 52px;
+    padding: 0 15px 0 13px;
     opacity: 0;
-    top: 0px;
     z-index: 30;
+    font-size: 18px;
 }
 
 .form__field-data {
-    display: block;
+    display: flex;
+    align-items: center;
     color: #211e1e;
     font-size: 18px;
     line-height: 28px;
     font-weight: 400;
-    padding: 12px 70px 12px 20px;
     background-color: var(--text-color);
+    padding: 0 20px 0 20px;
     cursor: pointer;
+    height: 52px;
+}
+
+[type="date"] {
+    width: 100%;
+    position: relative;
+    top: -52px;
+}
+
+[type="date"]::-webkit-calendar-picker-indicator {
+    width: 100%;
+    left: -1.5em;
+    background: none;
+    position: absolute;
+}
+
+[type="time"] {
+    width: 100%;
+    position: relative;
+    top: -52px;
+}
+
+[type="time"]::-webkit-calendar-picker-indicator {
+    width: 100%;
+    left: -1.5em;
+    background: none;
+    position: absolute;
 }
 
 .form__triangle {
@@ -252,10 +279,11 @@
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    position: relative;
+    position: absolute;
     background-color: var(--text-color);
     color: var(--black);
     cursor: pointer;
+    opacity: 0;
     font-size: 18px;
     line-height: 29px;
     font-weight: 400;
@@ -267,6 +295,22 @@
     align-items: center;
     position: relative;
     width: 300px;
+    height: 52px;
+}
+
+.form__select-text {
+    display: flex;
+    align-items: center;
+    color: #211e1e;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    padding: 12px 70px 12px 20px;
+    background-color: var(--text-color);
+    cursor: pointer;
+    height: 52px;
+    width: 300px;
+    margin: 0;
 }
 
 .form__select:focus {
@@ -277,8 +321,8 @@
     outline: 2px solid var(--violet);
 }
 
-.form__field-data:focus {
-    outline: 2px solid var(--violet);      /*не работает */
+.form__input-data:focus {
+    outline: 2px solid var(--violet);
 }
 
 .form__input-third_center {
@@ -391,7 +435,7 @@
     }
 
     .form__big-block_one {
-        gap: 36px;
+        gap: 35px;
     }
 
     .form__big-block_center {
@@ -455,7 +499,7 @@
 
     .form__big-block_one {
         padding-top: 0;
-        gap: 106px;
+        gap: 103px;
     }
 
     .form__big-block_last {
@@ -485,8 +529,6 @@
 
     .form__block {
         gap: 14px;
-        grid-column: 1/2;
-        grid-row: 1/2;
     }
 
     .form__select {
@@ -590,9 +632,8 @@
     }
 
     .form__block {
+        width: 280px;
         gap: 12px;
-        grid-column: 1/2;
-        grid-row: 1/2;
     }
 
     .form__select-wrap {
@@ -601,13 +642,12 @@
 
     .form__select {
         width: 280px;
-        font-size: 14px;
-        line-height: 18px;
-        grid-column: 1/2;
     }
 
-    .form__select-wrap:after {
-        top: 28px;
+    .form__select-text {
+        width: 280px;
+        font-size: 14px;
+        line-height: 18px;
     }
 
     .form__big-block_center {
@@ -632,7 +672,7 @@
     }
 
     .form__triangle {
-        top: 14px;
+        top: 17px;
     }
 
     .form__label-third_last {

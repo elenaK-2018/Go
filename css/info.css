@@ -41,6 +41,8 @@
 @media (max-width: 650px) {
     .info {
         gap: 11px;
+        max-width: 240px;
+        margin-left: 0;
     }
 
     .info__photo {
