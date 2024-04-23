@@ -106,9 +106,9 @@ fieldset {
     top: 67px;
 }
 
-.form__label-third_small.just-validate-error-label {
+/* .form__label-third_small.just-validate-error-label {
     top: 57px;
-}
+} */
 
 .alert-cookie {
     position: fixed;
@@ -130,7 +130,7 @@ fieldset {
     font-size: 1rem;
     line-height: 24px;
     font-weight: 500;
-    color: #000;
+    color: var(--black);
     margin-bottom: 10px;
 }
 
@@ -140,7 +140,7 @@ fieldset {
     font-size: 1rem;
     line-height: 24px;
     font-weight: 700;
-    background-color: blueviolet;
+    background-color: var(--violet);
     border-radius: 4px;
     padding: 7px 5px;
 }

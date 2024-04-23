@@ -42,7 +42,44 @@ const inputTel = document.querySelector('.modal-order__input_tel');
 const telMask = new Inputmask('+7(999)999-99-99'); 
 const modalTitle = document.querySelector('.modal-order__title');
 
-telMask.mask(inputTel);  
+telMask.mask(inputTel); 
+
+
+// const express = require("express");
+// const { createProxyMiddleware } = require("http-proxy-middleware");
+// const cors = require('cors');
+// const app = express();
+// // здесь мы указываем адрес нашего сервера
+// const API_SERVICE_URL = "https://postman-echo.com/post";
+// // прописываем следующую строку, если используется незашифрованное соединение
+// // это серьезная брешь в безопасности, следует использовать только на этапе
+// // разработки, и никогда в продакшене process.env["NODE_TLS_REJECT_UNAUTHORIZED"] = 0;
+// process.env["NODE_TLS_REJECT_UNAUTHORIZED"] = 0;
+
+// // здесь мы указываем, какие заголовки нам нужно разрешить для использования 
+// app.use(cors({ exposedHeaders: '*' }));
+// app.use("/", createProxyMiddleware({ target: API_SERVICE_URL, changeOrigin: true, ws: true, logLevel: "debug" }));
+// app.listen(PORT, HOST, () => { console.log(`Starting Proxy Server at ${HOST}:${PORT}`); });
+
+
+
+
+// const express = require("express");
+// const { createProxyMiddleware } = require("http-proxy-middleware");
+// const app = express();
+// const PORT = 3000;
+
+// app.use("/", createProxyMiddleware({ 
+//     target: "https://postman-echo.com",
+//     changeOrigin: true,
+//     logLevel: "debug" 
+// }));
+
+// app.listen(PORT, () => { 
+//     console.log(`Proxy Server is running at http://localhost:${PORT}`); 
+// });
+
+
 
 justValidate
     .addField('#name', [
@@ -77,13 +114,19 @@ justValidate
     ])
     .onSuccess(event => {
         const target = event.target;
-        axios.post('https://jsonplaceholder.typicode.com/posts', {
-        // axios.post('https://postman-echo.com/post', {
+        // axios.post('https://jsonplaceholder.typicode.com/posts', {
+        axios.post('https://postman-echo.com/post', {
             name: target.name.value,
             tel: inputTel.inputmask.unmaskedvalue(),
+        },
+        {
+            proxy: {
+                host: 'proxy.postman-echo.com',
+                port: 443
+            },
         })
         .then(response => {
-        // console.log(response)
+        // console.log(response)          Access-Control-Allow-Origin: https://postman-echo.com
         target.reset();
         modalTitle.textContent = `Спасибо ваша заявка принята, номер заявки ${response.data.id}!`;
         })
@@ -233,8 +276,8 @@ justValidateForm
     ]) 
     .onSuccess(event => {
         const target = event.target;
-        axios.post('https://jsonplaceholder.typicode.com/posts', {
-            // axios.post('https://postman-echo.com/post', {
+        // axios.post('https://jsonplaceholder.typicode.com/posts', {
+            axios.post('https://postman-echo.com/post', {
             name: target.name.value, 
             lastName: target.last_name.value,
             phone: target.phone.value,
