@@ -101,7 +101,6 @@ fieldset {
 }
 
 .just-validate-error-label {
-    font-size: 18px;
     position: absolute;
     color: red;
     top: 20px;
@@ -109,8 +108,12 @@ fieldset {
     font-size: 10px;
 }
 
-.form__label-third_small>.just-validate-error-label {
+.form__label-third_small >.just-validate-error-label {
     top: -2px;
+}
+
+.modal-order__label > .just-validate-error-label  {
+    font-size: 18px;
 }
 
 .alert-cookie {
@@ -259,7 +262,6 @@ fieldset {
 
     .just-validate-error-label {
         font-size: 14px;
-        top: 63px;
     }
 
     .alert-cookie__text {
@@ -271,5 +273,9 @@ fieldset {
         width: 40%;
         font-size: 0.7rem;
         line-height: 16px;
+    }
+
+    .modal-order__label > .just-validate-error-label {
+        font-size: 14px;
     }
 }

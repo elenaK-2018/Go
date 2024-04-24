@@ -35,7 +35,8 @@ modalOverlay.on('click', function(event) {
 
 const justValidate = new JustValidate('.modal-order__form', {
     errorLabelStyle: {
-        color: 'white'
+        color: 'white',
+        top: '67px'
     }
 });
 const inputTel = document.querySelector('.modal-order__input_tel');    
@@ -90,8 +91,8 @@ justValidate
         // })
         .then(response => {
         // console.log(response)          Access-Control-Allow-Origin: https://postman-echo.com
-        target.reset();
         modalTitle.textContent = `Спасибо ваша заявка принята, номер заявки ${response.data.id}!`;
+        target.reset();
         })
         .catch(err => {
         console.error(err);
@@ -145,7 +146,13 @@ dateLabels.forEach(function(label) {
 
      // валидация формы
 
-const justValidateForm = new JustValidate('.form');
+    const justValidateForm = new JustValidate('.form', {
+        errorLabelStyle: {
+            color: 'red',
+            left: '5px',
+            fontSize: '10px' 
+        }
+    });
 const inputTelForm = document.querySelector('#form-tel');    
 const telMaskForm = new Inputmask('+7(999)999-99-99');
 const bookingTitle = document.querySelector('.booking__title');
