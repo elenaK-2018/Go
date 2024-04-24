@@ -44,43 +44,6 @@ const modalTitle = document.querySelector('.modal-order__title');
 
 telMask.mask(inputTel); 
 
-
-// const express = require("express");
-// const { createProxyMiddleware } = require("http-proxy-middleware");
-// const cors = require('cors');
-// const app = express();
-// // здесь мы указываем адрес нашего сервера
-// const API_SERVICE_URL = "https://postman-echo.com/post";
-// // прописываем следующую строку, если используется незашифрованное соединение
-// // это серьезная брешь в безопасности, следует использовать только на этапе
-// // разработки, и никогда в продакшене process.env["NODE_TLS_REJECT_UNAUTHORIZED"] = 0;
-// process.env["NODE_TLS_REJECT_UNAUTHORIZED"] = 0;
-
-// // здесь мы указываем, какие заголовки нам нужно разрешить для использования 
-// app.use(cors({ exposedHeaders: '*' }));
-// app.use("/", createProxyMiddleware({ target: API_SERVICE_URL, changeOrigin: true, ws: true, logLevel: "debug" }));
-// app.listen(PORT, HOST, () => { console.log(`Starting Proxy Server at ${HOST}:${PORT}`); });
-
-
-
-
-// const express = require("express");
-// const { createProxyMiddleware } = require("http-proxy-middleware");
-// const app = express();
-// const PORT = 3000;
-
-// app.use("/", createProxyMiddleware({ 
-//     target: "https://postman-echo.com",
-//     changeOrigin: true,
-//     logLevel: "debug" 
-// }));
-
-// app.listen(PORT, () => { 
-//     console.log(`Proxy Server is running at http://localhost:${PORT}`); 
-// });
-
-
-
 justValidate
     .addField('#name', [
         {
@@ -114,17 +77,17 @@ justValidate
     ])
     .onSuccess(event => {
         const target = event.target;
-        // axios.post('https://jsonplaceholder.typicode.com/posts', {
-        axios.post('https://postman-echo.com/post', {
+        axios.post('https://jsonplaceholder.typicode.com/posts', {
+        // axios.post('https://postman-echo.com/post', {
             name: target.name.value,
             tel: inputTel.inputmask.unmaskedvalue(),
-        },
-        {
-            proxy: {
-                host: 'proxy.postman-echo.com',
-                port: 443
-            },
         })
+        // {
+        //     proxy: {
+        //         host: 'proxy.postman-echo.com',
+        //         port: 443
+        //     },
+        // })
         .then(response => {
         // console.log(response)          Access-Control-Allow-Origin: https://postman-echo.com
         target.reset();
@@ -155,14 +118,17 @@ dateLabels.forEach(function(label) {
     });
 });
 
-$(document).ready( function() {
-    let now = new Date();
-    let day = ("0" + now.getDate()).slice(-2);
-    let month = ("0" + (now.getMonth() + 1)).slice(-2);
-    let today = now.getFullYear()+"-"+(month)+"-"+(day) ;
 
-    $('#datePicker').val(today);
-});
+// вывод сегодняшней даты
+
+// $(document).ready( function() {
+//     let now = new Date();
+//     let day = ("0" + now.getDate()).slice(-2);
+//     let month = ("0" + (now.getMonth() + 1)).slice(-2);
+//     let today = now.getFullYear()+"-"+(month)+"-"+(day) ;
+
+//     $('#datePicker').val(today);
+// });
 
 
   // select
@@ -179,14 +145,7 @@ $(document).ready( function() {
 
      // валидация формы
 
-const justValidateForm = new JustValidate('.form', {
-    errorLabelStyle: {
-        color: 'red',
-        top: '20px',
-        left: '5px',
-        fontSize: '10px' 
-    }
-});
+const justValidateForm = new JustValidate('.form');
 const inputTelForm = document.querySelector('#form-tel');    
 const telMaskForm = new Inputmask('+7(999)999-99-99');
 const bookingTitle = document.querySelector('.booking__title');
@@ -209,7 +168,7 @@ justValidateForm
     .addField('#datePicker', [
         {
             rule: 'required',
-            errorMessage: 'Выберите дату',        // не работает
+            errorMessage: 'Выберите дату',      
         },
     ])
     .addField('#appt', [
@@ -276,8 +235,8 @@ justValidateForm
     ]) 
     .onSuccess(event => {
         const target = event.target;
-        // axios.post('https://jsonplaceholder.typicode.com/posts', {
-            axios.post('https://postman-echo.com/post', {
+        axios.post('https://jsonplaceholder.typicode.com/posts', {
+            // axios.post('https://postman-echo.com/post', {
             name: target.name.value, 
             lastName: target.last_name.value,
             phone: target.phone.value,

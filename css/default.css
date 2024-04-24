@@ -103,12 +103,15 @@ fieldset {
 .just-validate-error-label {
     font-size: 18px;
     position: absolute;
-    top: 67px;
+    color: red;
+    top: 20px;
+    left: 5px;
+    font-size: 10px;
 }
 
-/* .form__label-third_small.just-validate-error-label {
-    top: 57px;
-} */
+.form__label-third_small>.just-validate-error-label {
+    top: -2px;
+}
 
 .alert-cookie {
     position: fixed;
