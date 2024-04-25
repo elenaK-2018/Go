@@ -134,17 +134,19 @@ dateLabels.forEach(function(label) {
 
   // select
 
-    const select = document.querySelector('.form__select-wrap');
-    const selectText = document.querySelector('.form__select-text');
-    const selectForm = document.querySelector('.form__select');
+const select = document.querySelector('.form__select-wrap');
+const selectText = document.querySelector('.form__select-text');
+const selectForm = document.querySelector('.form__select');
 
-    select.addEventListener('click', () => {
-        selectText.innerText = '';
-        selectForm.style.opacity = '1';
-    })
+select?.addEventListener('click', () => {
+    selectText.innerText = '';
+    selectForm.style.opacity = '1';
+})
 
 
      // валидация формы
+
+if(document.querySelector('.form')) {
 
     const justValidateForm = new JustValidate('.form', {
         errorLabelStyle: {
@@ -152,7 +154,7 @@ dateLabels.forEach(function(label) {
             left: '5px',
             fontSize: '10px' 
         }
-    });
+});
 const inputTelForm = document.querySelector('#form-tel');    
 const telMaskForm = new Inputmask('+7(999)999-99-99');
 const bookingTitle = document.querySelector('.booking__title');
@@ -266,6 +268,7 @@ justValidateForm
             bookingTitle.textContent = 'Что-то пошло не так, попробуйте позже!';
             })
     }) 
+}
     
 
     // аккордеон
