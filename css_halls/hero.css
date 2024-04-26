@@ -1,6 +1,7 @@
 .hero {
     position: relative;
     min-height: 750px;
+    width: 100%;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

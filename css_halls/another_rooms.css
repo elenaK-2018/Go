@@ -1,10 +1,10 @@
-.another-rooms__title {
-    margin-bottom: 40px;
+.halls__item {
+    width: 380px;
+    height: 229px;
 }
 
-.halls__img {
-    width: 100%;
-    object-fit: cover;
+.another-rooms__title {
+    margin-bottom: 40px;
 }
 
 .halls__text {
@@ -20,6 +20,11 @@
 }
 
 @media (max-width: 1100px) {
+    .halls__item {
+        width: 288px;
+        height: 172px;
+    }
+
     .another-rooms__title {
         margin-bottom: 36px;
     }
@@ -30,6 +35,11 @@
 }
 
 @media (max-width: 970px) {
+    .halls__item {
+        width: 224px;
+        height: 134px;
+    }
+
     .another-rooms__title {
         margin-bottom: 30px;
     }
@@ -41,6 +51,11 @@
 }
 
 @media (max-width: 650px) {
+    .halls__item {
+        width: 280px;
+        height: 140px;
+    }
+
     .another-rooms__title {
         margin-bottom: 15px;
     }

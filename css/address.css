@@ -6,17 +6,18 @@
     margin-bottom: 39px;
 }
 
+.address__icon {
+    color: var(--violet);
+}
+
 .address__item {
-    padding-left: 60px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: left;
+    display: flex;
+    align-items: center;
+    gap: 28px;
 }
 
 .address__item_location {
-    background-image: url("../icons/location.svg");
     margin-bottom: 39px;
-    background-size: 32px;
 }
 
 .address__text {
@@ -25,12 +26,7 @@
 }
 
 .address__item_tel {
-    background-image: url("../icons/phone.svg");
     margin-bottom: 11px;
-}
-
-.address__item_email {
-    background-image: url("../icons/e-mail.svg");
 }
 
 .address__link {
@@ -53,21 +49,20 @@
     }
 
     .address__item {
-        padding-left: 39px;
+        gap: 13px;
+    }
+
+    .address__icon {
+        width: 26px;
+        height: 26px;
     }
 
     .address__item_location {
         margin-bottom: 40px;
-        background-image: url("../icons/location_small.svg");
     }
 
     .address__item_tel {
         margin-bottom: 7px;
-        background-image: url("../icons/phone_small.svg");
-    }
-
-    .address__item_email {
-        background-image: url("../icons/e-mail_small.svg");
     }
 }
 
@@ -84,9 +79,14 @@
     }
 
     .address__item_location {
+        position: relative;
         margin-bottom: 27px;
-        background-size: 26px;
-        background-position: top left 50px;
+    }
+
+    .address__icon_location {
+        position: absolute;
+        top: 0;
+        left: 10px;
     }
 
     .address__item_tel {
@@ -105,23 +105,22 @@
         align-items: center;
     }
 
-    .address__item {
-        padding-left: 25px;
+    .address__icon {
+        width: 20px;
+        height: 20px;
     }
 
     .address__item_location {
         margin-bottom: 10px;
-        background-image: url("../icons/location_mb.svg");
-        max-width: 200px;
+        max-width: 125px;
         line-height: 27px;
+    }
+
+    .address__icon_location {
+        left: 0;
     }
 
     .address__item_tel {
         margin-bottom: 10px;
-        background-image: url("../icons/phone_mb.svg");
-    }
-
-    .address__item_email {
-        background-image: url("../icons/e-mail_mb.svg");
     }
 }

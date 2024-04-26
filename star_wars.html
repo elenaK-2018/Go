@@ -77,13 +77,9 @@
             <div class="container">
                 <h2 class="title another-rooms__title">Другие комнаты</h2>
                 <ul class="another-rooms__list halls__list">
-                    <li class="halls__item">
+                    <li class="halls__item halls__item_vibes">
                         <a href="80_vibes.html" class="halls__link" target="_blank">
                             <figure class="halls__figure">
-                                <img
-                                    class="halls__img"
-                                    src="img/vibes.jpg"
-                                    alt="скриншот с изображением  зала"/>
                                 <figcaption class="halls__text">
                                     80's vibes
                                 </figcaption>
@@ -91,13 +87,9 @@
                         </a>
                     </li>
 
-                    <li class="halls__item">
+                    <li class="halls__item halls__item_wild-west">
                         <a href="wild_west.html" class="halls__link" target="_blank">
                             <figure class="halls__figure">
-                                <img
-                                    class="halls__img"
-                                    src="img/wild_west.jpg"
-                                    alt="скриншот с изображением  зала"/>
                                 <figcaption class="halls__text">
                                     Wild West
                                 </figcaption>
@@ -105,13 +97,9 @@
                         </a>
                     </li>
 
-                    <li class="halls__item">
+                    <li class="halls__item halls__item_neon-style">
                         <a href="neon_style.html" class="halls__link" target="_blank">
                             <figure class="halls__figure">
-                                <img
-                                    class="halls__img"
-                                    src="img/neon_style.jpg"
-                                    alt="скриншот с изображением  зала"/>
                                 <figcaption class="halls__text">
                                     Neon Style
                                 </figcaption>
@@ -131,25 +119,37 @@
                     <div class="contacts__block">
                         <address class="address">
                             <div class="address__list">
-                                <p class="address__item address__item_location">
-                                    <span class="address__text"> г. Москва ул.&nbsp;Усачёва,&nbsp;29&nbsp;к3</span>
-                                </p>
+                                <div class="address__item address__item_location">
+                                    <svg class="address__icon address__icon_location" width="32" height="32" viewbox="0 0 32 32" fill="currentColor">
+                                        <path d="M16 0C10.3772 0 5.6875 4.52938 5.6875 10.3125C5.6875 12.5126 6.34862 14.4745 7.61744 16.3129L15.2108 28.1616C15.5792 28.7376 16.4216 28.7365 16.7892 28.1616L24.4155 16.2726C25.657 14.5175 26.3125 12.4567 26.3125 10.3125C26.3125 4.62619 21.6863 0 16 0ZM16 15C13.4154 15 11.3125 12.8971 11.3125 10.3125C11.3125 7.72794 13.4154 5.625 16 5.625C18.5846 5.625 20.6875 7.72794 20.6875 10.3125C20.6875 12.8971 18.5846 15 16 15Z"/>
+                                        <path d="M23.329 21.5435L18.6083 28.9239C17.3864 30.829 14.6068 30.8228 13.3907 28.9257L8.66238 21.5454C4.50213 22.5073 1.9375 24.2693 1.9375 26.375C1.9375 30.0289 9.183 32 16 32C22.817 32 30.0625 30.0289 30.0625 26.375C30.0625 24.2678 27.4943 22.5048 23.329 21.5435Z"/>
+                                    </svg>         
+                                    <p class="address__text"> г. Москва ул.&nbsp;Усачёва,&nbsp;29&nbsp;к3</p>
+                                </div>
 
-                                <p class="address__item address__item_tel">
+                                <div class="address__item address__item_tel">
+                                    <svg class="address__icon" width="32" height="32" viewbox="0 0 32 32" fill="currentColor">
+                                        <path d="M26.6667 14.6654H29.3333C29.3333 7.82541 24.1693 2.66675 17.32 2.66675V5.33341C22.736 5.33341 26.6667 9.25741 26.6667 14.6654Z"/>
+                                        <path d="M17.3333 10.6667C20.1373 10.6667 21.3333 11.8627 21.3333 14.6667H24C24 10.3667 21.6333 7.99999 17.3333 7.99999V10.6667ZM21.896 17.924C21.6398 17.6911 21.3031 17.5669 20.9571 17.5776C20.611 17.5883 20.2827 17.7331 20.0413 17.9813L16.8507 21.2627C16.0827 21.116 14.5387 20.6347 12.9493 19.0493C11.36 17.4587 10.8787 15.9107 10.736 15.148L14.0147 11.956C14.2632 11.7148 14.4082 11.3864 14.4189 11.0403C14.4296 10.6941 14.3052 10.3574 14.072 10.1013L9.14534 4.68399C8.91207 4.42714 8.58785 4.27133 8.24155 4.24967C7.89525 4.22801 7.55414 4.3422 7.29068 4.56799L4.39734 7.04933C4.16682 7.28068 4.02924 7.58859 4.01068 7.91466C3.99068 8.24799 3.60934 16.144 9.73201 22.2693C15.0733 27.6093 21.764 28 23.6067 28C23.876 28 24.0413 27.992 24.0853 27.9893C24.4114 27.9711 24.7191 27.8329 24.9493 27.6013L27.4293 24.7067C27.6553 24.4434 27.7697 24.1024 27.7483 23.7561C27.7269 23.4098 27.5713 23.0855 27.3147 22.852L21.896 17.924Z"/>
+                                    </svg>
                                     <a
                                         class="address__link"
                                         href="tel:89509302893"
                                         target="_blank">8 (950) 930-28-93 
                                     </a>
-                                </p>
+                                </div>
 
-                                <p class="address__item address__item_email">
+                                <div class="address__item address__item_email">
+                                    <svg class="address__icon" width="32" height="32" viewbox="0 0 32 32" fill="currentColor">
+                                        <path d="M0.667993 5.94725C5.05987 9.66669 12.7662 16.2103 15.0312 18.2506C15.3353 18.526 15.6614 18.666 16 18.666C16.3379 18.666 16.6634 18.5273 16.9668 18.2533C19.2337 16.2109 26.9401 9.66669 31.332 5.94725C31.6055 5.71612 31.6472 5.30987 31.4258 5.02731C30.914 4.37437 30.151 4 29.3333 4H2.66668C1.84899 4 1.08593 4.37438 0.574244 5.02738C0.352869 5.30988 0.394556 5.71612 0.667993 5.94725Z"/>
+                                        <path d="M31.6133 7.96279C31.377 7.85279 31.099 7.89116 30.9024 8.05916C26.0319 12.188 19.8158 17.4804 17.86 19.2427C16.7623 20.2336 15.2389 20.2336 14.1386 19.2414C12.054 17.3632 5.0735 11.4289 1.09763 8.0591C0.899688 7.8911 0.621063 7.85404 0.386687 7.96273C0.151062 8.07216 0 8.30785 0 8.5676V25.3332C0 26.804 1.19594 27.9999 2.66669 27.9999H29.3334C30.8041 27.9999 32 26.804 32 25.3332V8.5676C32 8.30785 31.8489 8.07154 31.6133 7.96279Z"/>
+                                    </svg>                                           
                                     <a
                                         class="address__link"
                                         href="mailto:GameOver@gmail.com"
                                         target="_blank">GameOver@gmail.com
                                     </a>
-                                </p>
+                                </div>
                             </div>
                         </address>
 
@@ -244,7 +244,7 @@
                 <svg width="42" height="42" viewbox="0 0 42 42" fill="currentColor">
                     <rect y="38.4407" width="54.3632" height="5.03363" rx="2" transform="rotate(-45 0 38.4407)"/>
                     <rect x="3.55957" width="54.3632" height="5.03363" rx="2" transform="rotate(45 3.55957 0)"/>
-                    </svg>                    
+                </svg>                    
             </button>
 
             <form class="modal-order__form">
