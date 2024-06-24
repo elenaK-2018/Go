@@ -1,120 +1,156 @@
 .halls__title {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .halls__list {
-    display: grid;
-    grid-template-columns: repeat(2, 580px);
-    justify-content: center;
-    gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 580px);
+  justify-content: center;
+  gap: 20px;
 }
 
 .halls__link {
-    display: block;
-    width: 100%;
-    height: 100%;
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .halls__item {
-    position: relative;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 580px;
-    height: 349px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 580px;
+  height: 349px;
 }
 
 .halls__item_vibes {
-    background-image: url("../img/vibes.jpg");
+  background-image: -webkit-image-set(
+    url("../img/vibes.avif"),
+    url("../img/vibes.webp"),
+    url("../img/vibes.jpg")
+  );
+  background-image: image-set(
+    url("../img/vibes.avif"),
+    url("../img/vibes.webp"),
+    url("../img/vibes.jpg")
+  );
 }
 
 .halls__item_star-wars {
-    background-image: url("../img/star_wars.jpg");
+  background-image: -webkit-image-set(
+    url("../img/star_wars.avif"),
+    url("../img/star_wars.webp"),
+    url("../img/star_wars.jpg")
+  );
+  background-image: image-set(
+    url("../img/star_wars.avif"),
+    url("../img/star_wars.webp"),
+    url("../img/star_wars.jpg")
+  );
 }
 
 .halls__item_wild-west {
-    background-image: url("../img/wild_west.jpg");
+  background-image: -webkit-image-set(
+    url("../img/wild_west.avif"),
+    url("../img/wild_west.webp"),
+    url("../img/wild_west.jpg")
+  );
+  background-image: image-set(
+    url("../img/wild_west.avif"),
+    url("../img/wild_west.webp"),
+    url("../img/wild_west.jpg")
+  );
 }
 
 .halls__item_neon-style {
-    background-image: url("../img/neon_style.jpg");
+  background-image: -webkit-image-set(
+    url("../img/neon_style.avif"),
+    url("../img/neon_style.webp"),
+    url("../img/neon_style.jpg")
+  );
+  background-image: image-set(
+    url("../img/neon_style.avif"),
+    url("../img/neon_style.webp"),
+    url("../img/neon_style.jpg")
+  );
 }
 
 .halls__text {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 70px;
-    text-transform: uppercase;
-    line-height: 80px;
-    text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 70px;
+  text-transform: uppercase;
+  line-height: 80px;
+  text-align: center;
 }
 
 .halls__img {
-    width: 100%;
-    object-fit: cover;
+  width: 100%;
+  object-fit: cover;
 }
 
 @media (max-width: 1100px) {
-    .halls__item {
-        width: 443px;
-        height: 267px;
-    }
+  .halls__item {
+    width: 443px;
+    height: 267px;
+  }
 
-    .halls__title {
-        margin-bottom: 37px;
-    }
+  .halls__title {
+    margin-bottom: 37px;
+  }
 
-    .halls__list {
-        grid-template-columns: repeat(2, 443px);
-    }
+  .halls__list {
+    grid-template-columns: repeat(2, 443px);
+  }
 
-    .halls__text {
-        font-size: 50px;
-        line-height: 60px;
-        text-align: center;
-    }
+  .halls__text {
+    font-size: 50px;
+    line-height: 60px;
+    text-align: center;
+  }
 }
 
 @media (max-width: 970px) {
-    .halls__item {
-        width: 335px;
-        height: 200px;
-    }
+  .halls__item {
+    width: 335px;
+    height: 200px;
+  }
 
-    .halls__title {
-        margin-bottom: 35px;
-    }
+  .halls__title {
+    margin-bottom: 35px;
+  }
 
-    .halls__list {
-        grid-template-columns: repeat(2, 335px);
-    }
+  .halls__list {
+    grid-template-columns: repeat(2, 335px);
+  }
 
-    .halls__text {
-        font-size: 40px;
-        max-width: 121px;
-        line-height: 50px;
-    }
+  .halls__text {
+    font-size: 40px;
+    max-width: 121px;
+    line-height: 50px;
+  }
 }
 
 @media (max-width: 650px) {
-    .halls__item {
-        width: 280px;
-        height: 168px;
-    }
+  .halls__item {
+    width: 280px;
+    height: 168px;
+  }
 
-    .halls__title {
-        margin-bottom: 15px;
-    }
+  .halls__title {
+    margin-bottom: 15px;
+  }
 
-    .halls__list {
-        grid-template-columns: 280px;
-        gap: 10px;
-    }
+  .halls__list {
+    grid-template-columns: 280px;
+    gap: 10px;
+  }
 
-    .halls__text {
-        font-size: 26px;
-        line-height: 34px;
-    }
+  .halls__text {
+    font-size: 26px;
+    line-height: 34px;
+  }
 }

@@ -1,58 +1,58 @@
 .info {
-    width: 378px;
-    display: flex;
-    align-items: center;
-    gap: 29.72px;
+  width: 378px;
+  display: flex;
+  align-items: center;
+  gap: 29.72px;
 }
 
 .info__photo {
-    width: 80px;
-    height: 80px;
-    border-radius: 50px;
-    object-fit: cover;
-    object-position: top -9px right 0px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+  object-fit: cover;
+  object-position: top -9px right 0px;
 }
 
 .info__cite {
-    width: 279px;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 28px;
+  width: 279px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
 }
 
 @media (max-width: 1100px) {
-    .info {
-        width: 330px;
-        gap: 35px;
-    }
+  .info {
+    width: 330px;
+    gap: 35px;
+  }
 
-    .info__photo {
-        width: 70px;
-        height: 70px;
-    }
+  .info__photo {
+    width: 70px;
+    height: 70px;
+  }
 
-    .info__cite {
-        width: 225px;
-        font-size: 18px;
-        line-height: 26px;
-    }
+  .info__cite {
+    width: 225px;
+    font-size: 18px;
+    line-height: 26px;
+  }
 }
 
 @media (max-width: 650px) {
-    .info {
-        gap: 11px;
-        max-width: 240px;
-        margin-left: 0;
-    }
+  .info {
+    gap: 11px;
+    max-width: 240px;
+    margin-left: 0;
+  }
 
-    .info__photo {
-        width: 56px;
-        height: 56px;
-    }
+  .info__photo {
+    width: 56px;
+    height: 56px;
+  }
 
-    .info__cite {
-        width: 185px;
-        font-size: 12px;
-        line-height: 16px;
-    }
+  .info__cite {
+    width: 185px;
+    font-size: 12px;
+    line-height: 16px;
+  }
 }

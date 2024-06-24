@@ -1,92 +1,92 @@
 .header__container {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
 }
 
 .header__button {
-    color: var(--text-color);
-    border: 3px solid var(--violet);
-    border-radius: 10px;
-    padding: 12px 34px 13px;
-    font-size: 22px;
-    line-height: 30px;
-    text-transform: uppercase;
-    transition: 0.4s ease-in-out;
-    align-self: center;
+  color: var(--text-color);
+  border: 3px solid var(--violet);
+  border-radius: 10px;
+  padding: 12px 34px 13px;
+  font-size: 22px;
+  line-height: 30px;
+  text-transform: uppercase;
+  transition: 0.4s ease-in-out;
+  align-self: center;
 }
 
 .header__button:hover {
-    background-color: var(--main-color);
-    border: 3px solid var(--main-color);
+  background-color: var(--main-color);
+  border: 3px solid var(--main-color);
 }
 
 .header__button:focus {
-    background-color: var(--main-color);
+  background-color: var(--main-color);
 }
 
 .header__button:active {
-    background-color: var(--purple);
-    border: 3px solid transparent;
+  background-color: var(--purple);
+  border: 3px solid transparent;
 }
 
 .header__button__mobile {
-    display: none;
+  display: none;
 }
 
 @media (max-width: 1100px) {
-    .header__logo {
-        z-index: 20;
-        width: 87px;
-        height: 55px;
-    }
+  .header__logo {
+    z-index: 20;
+    width: 87px;
+    height: 55px;
+  }
 
-    .header__button {
-        border-radius: 8px;
-        padding: 8px 26px 7px;
-        font-size: 18px;
-        line-height: 24px;
-        z-index: 20;
-    }
+  .header__button {
+    border-radius: 8px;
+    padding: 8px 26px 7px;
+    font-size: 18px;
+    line-height: 24px;
+    z-index: 20;
+  }
 }
 
 @media (max-width: 970px) {
-    .header__container {
-        padding-top: 32px;
-    }
+  .header__container {
+    padding-top: 32px;
+  }
 }
 
 @media (max-width: 650px) {
-    .header__container {
-        padding-top: 20px;
-    }
+  .header__container {
+    padding-top: 20px;
+  }
 
-    .header__button {
-        display: none;
-    }
+  .header__button {
+    display: none;
+  }
 
-    .header__logo {
-        height: 42px;
-        margin-left: auto;
-    }
+  .header__logo {
+    height: 42px;
+    margin-left: auto;
+  }
 
-    .header__button__mobile {
-        display: block;
-        margin: 0 auto;
-        font-size: 14px;
-        line-height: 14px;
-        font-weight: 700;
-        padding: 11px 23px 12px;
-        border-radius: 6px;
-        border: 2px solid var(--violet);
-    }
+  .header__button__mobile {
+    display: block;
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 700;
+    padding: 11px 23px 12px;
+    border-radius: 6px;
+    border: 2px solid var(--violet);
+  }
 
-    .header__button:hover {
-        border: 2px solid var(--main-color);
-    }
+  .header__button:hover {
+    border: 2px solid var(--main-color);
+  }
 
-    .header__button:active {
-        background-color: var(--purple);
-        border: 2px solid transparent;
-    }
+  .header__button:active {
+    background-color: var(--purple);
+    border: 2px solid transparent;
+  }
 }

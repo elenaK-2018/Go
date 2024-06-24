@@ -1,61 +1,97 @@
 .hero {
-    position: relative;
-    min-height: 750px;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+  position: relative;
+  min-height: 750px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero_80-vibes {
-    background-image: url("../img_halls/80_vibes.jpg");
+  background-image: -webkit-image-set(
+    url("../img_halls/80_vibes.avif"),
+    url("../img_halls/80_vibes.webp"),
+    url("../img_halls/80_vibes.jpg")
+  );
+  background-image: image-set(
+    url("../img_halls/80_vibes.avif"),
+    url("../img_halls/80_vibes.webp"),
+    url("../img_halls/80_vibes.jpg")
+  );
 }
 
 .hero_star-wars {
-    background-image: url("../img_halls/star_wars.jpg");
+  background-image: -webkit-image-set(
+    url("../img_halls/star_wars.avif"),
+    url("../img_halls/star_wars.webp"),
+    url("../img_halls/star_wars.jpg")
+  );
+  background-image: image-set(
+    url("../img_halls/star_wars.avif"),
+    url("../img_halls/star_wars.webp"),
+    url("../img_halls/star_wars.jpg")
+  );
 }
 
 .hero_wild-west {
-    background-image: url("../img_halls/wild_west.jpg");
+  background-image: -webkit-image-set(
+    url("../img_halls/wild_west.avif"),
+    url("../img_halls/wild_west.webp"),
+    url("../img_halls/wild_west.jpg")
+  );
+  background-image: image-set(
+    url("../img_halls/wild_west.avif"),
+    url("../img_halls/wild_west.webp"),
+    url("../img_halls/wild_west.jpg")
+  );
 }
 
 .hero_neon-style {
-    background-image: url("../img_halls/neon_style.jpg");
+  background-image: -webkit-image-set(
+    url("../img_halls/neon_style.avif"),
+    url("../img_halls/neon_style.webp"),
+    url("../img_halls/neon_style.jpg")
+  );
+  background-image: image-set(
+    url("../img_halls/neon_style.avif"),
+    url("../img_halls/neon_style.webp"),
+    url("../img_halls/neon_style.jpg")
+  );
 }
 
 .hero__title {
-    font-size: 90px;
-    line-height: 80px;
-    text-transform: uppercase;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  font-size: 90px;
+  line-height: 80px;
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 @media (max-width: 1100px) {
-    .hero {
-        min-height: 534px;
-    }
+  .hero {
+    min-height: 534px;
+  }
 }
 
 @media (max-width: 970px) {
-    .hero {
-        min-height: 402px;
-    }
+  .hero {
+    min-height: 402px;
+  }
 
-    .hero__title {
-        font-size: 60px;
-        line-height: 1.2;
-    }
+  .hero__title {
+    font-size: 60px;
+    line-height: 1.2;
+  }
 }
 
 @media (max-width: 650px) {
-    .hero {
-        min-height: 168px;
-    }
+  .hero {
+    min-height: 168px;
+  }
 
-    .hero__title {
-        font-size: 30px;
-    }
+  .hero__title {
+    font-size: 30px;
+  }
 }

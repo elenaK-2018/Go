@@ -1,84 +1,88 @@
 .blockquote {
-    display: flex;
-    gap: 9px;
-    margin-bottom: 38px;
+  display: flex;
+  gap: 9px;
+  margin-bottom: 38px;
 }
 
 .blockquote__title {
-    font-size: 44px;
-    font-weight: 500;
-    line-height: 50px;
-    text-transform: uppercase;
-    max-width: 420px;
+  font-size: 44px;
+  font-weight: 500;
+  line-height: 50px;
+  text-transform: uppercase;
+  max-width: 420px;
 }
 
 .blockquote__title:not(:first-line) {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
 .blockquote__span {
-    font-size: 44px;
-    font-weight: 900;
-    line-height: 50px;
-    text-transform: uppercase;
-    color: var(--main-color);
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 50px;
+  text-transform: uppercase;
+  color: var(--main-color);
 }
 
 .blockquote__span_one {
-    transform: translateY(-10px);
+  -webkit-transform: translateY(-10px);
+      -ms-transform: translateY(-10px);
+          transform: translateY(-10px);
 }
 
 .blockquote__span_two {
-    margin-left: 10px;
+  margin-left: 10px;
 }
 
 @media (max-width: 1100px) {
-    .blockquote {
-        margin-bottom: 13px;
-    }
+  .blockquote {
+    margin-bottom: 13px;
+  }
 
-    .blockquote__title {
-        font-size: 30px;
-        font-weight: 400;
-        line-height: 36px;
-        max-width: 400px;
-    }
+  .blockquote__title {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    max-width: 400px;
+  }
 
-    .blockquote__span {
-        font-size: 30px;
-        line-height: 36px;
-    }
+  .blockquote__span {
+    font-size: 30px;
+    line-height: 36px;
+  }
 }
 
 @media (max-width: 970px) {
-    .blockquote {
-        margin-bottom: 16px;
-    }
+  .blockquote {
+    margin-bottom: 16px;
+  }
 
-    .blockquote__title {
-        font-size: 32px;
-        line-height: 36px;
-        max-width: 660px;
-    }
+  .blockquote__title {
+    font-size: 32px;
+    line-height: 36px;
+    max-width: 660px;
+  }
 }
 
 @media (max-width: 650px) {
-    .blockquote {
-        margin-bottom: 9px;
-    }
+  .blockquote {
+    margin-bottom: 9px;
+  }
 
-    .blockquote__title {
-        font-size: 18px;
-        line-height: 26px;
-        max-width: 265px;
-    }
+  .blockquote__title {
+    font-size: 18px;
+    line-height: 26px;
+    max-width: 265px;
+  }
 
-    .blockquote__span {
-        font-size: 22px;
-        line-height: 19px;
-    }
+  .blockquote__span {
+    font-size: 22px;
+    line-height: 19px;
+  }
 
-    .blockquote__span_one {
-        transform: translateY(-6px);
-    }
+  .blockquote__span_one {
+    -webkit-transform: translateY(-6px);
+        -ms-transform: translateY(-6px);
+            transform: translateY(-6px);
+  }
 }

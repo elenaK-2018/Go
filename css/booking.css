@@ -1,688 +1,688 @@
 .section-color {
-    max-width: 100%;
-    height: auto;
-    padding-top: 80px;
-    padding-bottom: 80px;
-    background-color: var(--purple-bg);
+  max-width: 100%;
+  height: auto;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: var(--purple-bg);
 }
 
 .booking__title {
-    margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .form__fieldset-block {
-    border: 0;
+  border: 0;
 }
 
 .form__fieldset-block:not(:last-child) {
-    margin-bottom: 60px;
+  margin-bottom: 60px;
 }
 
 .form__fieldset-block_one {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .form__title {
-    font-size: 24px;
-    line-height: 28px;
-    text-align: center;
-    margin-bottom: 40px;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
 .form__fieldset {
-    border: 0;
+  border: 0;
 }
 
 .form__subtitle {
-    font-size: 23px;
-    line-height: 28px;
-    margin-bottom: 24px;
+  font-size: 23px;
+  line-height: 28px;
+  margin-bottom: 24px;
 }
 
 .form__fieldset-block-wrap {
-    display: flex;
-    justify-content: space-between;
-    max-width: 980px;
-    margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  max-width: 980px;
+  margin: 0 auto;
 }
 
 .form__fieldset-block-grid {
-    max-width: 980px;
-    margin: 0 auto;
+  max-width: 980px;
+  margin: 0 auto;
 }
 
 .form__fieldset_two {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .form__radio-label-1 {
-    font-size: 22px;
-    line-height: 25px;
-    font-weight: 400;
+  font-size: 22px;
+  line-height: 25px;
+  font-weight: 400;
 }
 
 .form__input {
-    width: 27px;
-    height: 27px;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    position: relative;
-    margin-right: 12px;
-    cursor: pointer;
-    outline: 1px solid transparent;
-    color: var(--text-color);
-    transition: color 0.3s ease-in-out;
+  width: 27px;
+  height: 27px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+  margin-right: 12px;
+  cursor: pointer;
+  outline: 1px solid transparent;
+  color: var(--text-color);
+  transition: color 0.3s ease-in-out;
 }
 
 .form__input-btn {
-    position: absolute;
-    width: 0;
-    height: 0;
-    margin-right: 0;
+  position: absolute;
+  width: 0;
+  height: 0;
+  margin-right: 0;
 }
 
 .form__radio-label {
-    display: inline-block;
-    width: 250px;
-    height: 55px;
-    text-align: center;
-    padding: 7px 15px 8px;
-    background-color: var(--text-color);
-    color: var(--black);
-    font-size: 30px;
-    line-height: 40px;
-    text-transform: uppercase;
-    border-radius: 8px;
-    border: 3px solid transparent;
-    transition: 0.4s ease-in-out;
-    cursor: pointer;
+  display: inline-block;
+  width: 250px;
+  height: 55px;
+  text-align: center;
+  padding: 7px 15px 8px;
+  background-color: var(--text-color);
+  color: var(--black);
+  font-size: 30px;
+  line-height: 40px;
+  text-transform: uppercase;
+  border-radius: 8px;
+  border: 3px solid transparent;
+  transition: 0.4s ease-in-out;
+  cursor: pointer;
 }
 
 .form__radio-label:hover,
 .form__radio-label:focus {
-    background-color: var(--light);
-    border: 3px solid var(--purple);
+  background-color: var(--light);
+  border: 3px solid var(--purple);
 }
 
 .form__input-btn:active + .form__radio-label,
 .form__input-btn:checked + .form__radio-label {
-    background-color: var(--main-color);
-    border: 3px solid var(--text-color);
-    color: var(--text-color);
+  background-color: var(--main-color);
+  border: 3px solid var(--text-color);
+  color: var(--text-color);
 }
 
 .form__input-btn:focus + .form__radio-label {
-    outline: 3px solid var(--purple);
+  outline: 3px solid var(--purple);
 }
 
 .form__label-one {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    width: max-content;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  width: max-content;
 }
 
 .form__label-one:not(:last-child) {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .form__input_ellipse:before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    border-radius: 50px;
-    background-color: var(--text-color);
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50px;
+  background-color: var(--text-color);
 }
 
 .form__input_ellipse:after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 9px;
-    height: 9px;
-    transform: translate(-50%, -50%);
-    background-color: var(--black);
-    border-radius: 50%;
-    opacity: 0;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 9px;
+  height: 9px;
+  transform: translate(-50%, -50%);
+  background-color: var(--black);
+  border-radius: 50%;
+  opacity: 0;
 }
 
 .form__input_ellipse:checked:after {
-    opacity: 1;
+  opacity: 1;
 }
 
 .form__input_square {
-    width: 25px;
-    height: 25px;
+  width: 25px;
+  height: 25px;
 }
 
 .form__input_square:before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    border-radius: 0%;
-    background-color: var(--text-color);
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 0%;
+  background-color: var(--text-color);
 }
 
 .form__input_square:after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 9px;
-    height: 9px;
-    transform: translate(-50%, -50%);
-    background-color: var(--black);
-    border-radius: 0%;
-    opacity: 0;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 9px;
+  height: 9px;
+  transform: translate(-50%, -50%);
+  background-color: var(--black);
+  border-radius: 0%;
+  opacity: 0;
 }
 
 .form__input:focus {
-    outline-color: var(--violet);
+  outline-color: var(--violet);
 }
 
 .form__input-btn:focus {
-    outline: none;
+  outline: none;
 }
 
 .form__input_square:checked:after {
-    opacity: 1;
+  opacity: 1;
 }
 
 .form__fieldset-block-grid {
-    display: flex;
-    gap: 50px;
+  display: flex;
+  gap: 50px;
 }
 
 .form__label-third {
-    position: relative;
-    line-height: 16px;
+  position: relative;
+  line-height: 16px;
 }
 
 .form__label-third_small {
-    width: 134px;
-    height: 52px;
+  width: 134px;
+  height: 52px;
 }
 
 .form__input-data {
-    height: 52px;
-    padding: 0 15px 0 13px;
-    opacity: 0;
-    z-index: 30;
-    font-size: 18px;
+  height: 52px;
+  padding: 0 15px 0 13px;
+  opacity: 0;
+  z-index: 30;
+  font-size: 18px;
 }
 
 .form__field-data {
-    display: flex;
-    align-items: center;
-    color: #211e1e;
-    font-size: 18px;
-    line-height: 28px;
-    font-weight: 400;
-    background-color: var(--text-color);
-    padding: 0 20px 0 20px;
-    cursor: pointer;
-    height: 52px;
+  display: flex;
+  align-items: center;
+  color: #211e1e;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+  background-color: var(--text-color);
+  padding: 0 20px 0 20px;
+  cursor: pointer;
+  height: 52px;
 }
 
 [type="date"] {
-    width: 100%;
-    position: relative;
-    top: -52px;
+  width: 100%;
+  position: relative;
+  top: -52px;
 }
 
 [type="date"]::-webkit-calendar-picker-indicator {
-    width: 100%;
-    left: -1.5em;
-    background: none;
-    position: absolute;
+  width: 100%;
+  left: -1.5em;
+  background: none;
+  position: absolute;
 }
 
 [type="time"] {
-    width: 100%;
-    position: relative;
-    top: -52px;
+  width: 100%;
+  position: relative;
+  top: -52px;
 }
 
 [type="time"]::-webkit-calendar-picker-indicator {
-    width: 100%;
-    left: -1.5em;
-    background: none;
-    position: absolute;
+  width: 100%;
+  left: -1.5em;
+  background: none;
+  position: absolute;
 }
 
 .form__triangle {
-    position: absolute;
-    width: 21px;
-    height: 15px;
-    top: 19px;
-    right: 17px;
-    pointer-events: none;
-    z-index: 20;
+  position: absolute;
+  width: 21px;
+  height: 15px;
+  top: 19px;
+  right: 17px;
+  pointer-events: none;
+  z-index: 20;
 }
 
 .form__input-third {
-    width: 300px;
-    height: 52px;
-    background-color: var(--text-color);
-    font-size: 18px;
-    line-height: 28px;
+  width: 300px;
+  height: 52px;
+  background-color: var(--text-color);
+  font-size: 18px;
+  line-height: 28px;
 }
 
 .form__select {
-    width: 100%;
-    height: 52px;
-    padding: 12px 134px 12px 20px;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    position: absolute;
-    background-color: var(--text-color);
-    color: var(--black);
-    cursor: pointer;
-    opacity: 0;
-    font-size: 18px;
-    line-height: 29px;
-    font-weight: 400;
-    transition: 0.2s ease-in-out;
+  width: 100%;
+  height: 52px;
+  padding: 12px 134px 12px 20px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+  background-color: var(--text-color);
+  color: var(--black);
+  cursor: pointer;
+  opacity: 0;
+  font-size: 18px;
+  line-height: 29px;
+  font-weight: 400;
+  transition: 0.2s ease-in-out;
 }
 
 .form__select-wrap {
-    display: flex;
-    align-items: center;
-    position: relative;
-    width: 300px;
-    height: 52px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 300px;
+  height: 52px;
 }
 
 .form__select-text {
-    display: flex;
-    align-items: center;
-    color: #211e1e;
-    font-size: 18px;
-    line-height: 28px;
-    font-weight: 400;
-    padding: 12px 70px 12px 20px;
-    background-color: var(--text-color);
-    cursor: pointer;
-    height: 52px;
-    width: 300px;
-    margin: 0;
+  display: flex;
+  align-items: center;
+  color: #211e1e;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+  padding: 12px 70px 12px 20px;
+  background-color: var(--text-color);
+  cursor: pointer;
+  height: 52px;
+  width: 300px;
+  margin: 0;
 }
 
 .form__select:focus {
-    outline: 2px solid var(--violet);
+  outline: 2px solid var(--violet);
 }
 
 .form__input-third:focus {
-    outline: 2px solid var(--violet);
+  outline: 2px solid var(--violet);
 }
 
 .form__input-data:focus {
-    outline: 2px solid var(--violet);
+  outline: 2px solid var(--violet);
 }
 
 .form__input-third_center {
-    width: 280px;
+  width: 280px;
 }
 
 .form__field {
-    display: block;
-    font-size: 14px;
-    line-height: 16px;
-    margin-bottom: 6px;
+  display: block;
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 6px;
 }
 
 .form__block {
-    display: flex;
-    width: 300px;
-    gap: 32px;
+  display: flex;
+  width: 300px;
+  gap: 32px;
 }
 
 .form__big-block {
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
 }
 
 .form__big-block_one {
-    padding-top: 23px;
-    gap: 36px;
+  padding-top: 23px;
+  gap: 36px;
 }
 
 .form__big-block_center {
-    width: 280px;
+  width: 280px;
 }
 
 .form__label-third_last {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 .btn {
-    background-color: var(--text-color);
-    color: var(--main-color);
-    border-radius: 10px;
-    font-size: 22px;
-    line-height: 28px;
-    font-weight: 700;
-    text-transform: uppercase;
-    padding: 16px 50px;
-    box-shadow: 0 0 10px 4px rgba(250, 250, 250, 0.6);
-    border: 3px solid transparent;
-    transition: 0.4s ease-in-out;
+  background-color: var(--text-color);
+  color: var(--main-color);
+  border-radius: 10px;
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 16px 50px;
+  box-shadow: 0 0 10px 4px rgba(250, 250, 250, 0.6);
+  border: 3px solid transparent;
+  transition: 0.4s ease-in-out;
 }
 
 .btn:hover,
 .btn:focus {
-    background-color: var(--light);
-    border: 3px solid var(--main-color);
+  background-color: var(--light);
+  border: 3px solid var(--main-color);
 }
 
 .btn:active {
-    background-color: var(--light);
-    color: var(--main-color);
+  background-color: var(--light);
+  color: var(--main-color);
 }
 
 @media (max-width: 1100px) {
-    .section-color {
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
+  .section-color {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 
-    .booking__title {
-        margin-bottom: 25px;
-    }
+  .booking__title {
+    margin-bottom: 25px;
+  }
 
-    .form__title {
-        margin-bottom: 26px;
-    }
+  .form__title {
+    margin-bottom: 26px;
+  }
 
-    .form__subtitle {
-        font-size: 24px;
-        margin-bottom: 23px;
-    }
+  .form__subtitle {
+    font-size: 24px;
+    margin-bottom: 23px;
+  }
 
-    .form__label {
-        height: 46px;
-    }
+  .form__label {
+    height: 46px;
+  }
 
-    .form__radio-label {
-        width: 180px;
-        height: 44px;
-        padding: 10px 20px;
-        font-size: 20px;
-        line-height: 20px;
-        border-radius: 6px;
-    }
+  .form__radio-label {
+    width: 180px;
+    height: 44px;
+    padding: 10px 20px;
+    font-size: 20px;
+    line-height: 20px;
+    border-radius: 6px;
+  }
 
-    .form__input-third {
-        width: 254px;
-    }
+  .form__input-third {
+    width: 254px;
+  }
 
-    .form__input-third_center {
-        width: 251px;
-    }
+  .form__input-third_center {
+    width: 251px;
+  }
 
-    .form__fieldset-block-grid {
-        gap: 49px;
-    }
+  .form__fieldset-block-grid {
+    gap: 49px;
+  }
 
-    .form__big-block_last {
-        width: 254px;
-    }
+  .form__big-block_last {
+    width: 254px;
+  }
 
-    .form__big-block_one {
-        gap: 35px;
-    }
+  .form__big-block_one {
+    gap: 35px;
+  }
 
-    .form__big-block_center {
-        width: 251px;
-    }
+  .form__big-block_center {
+    width: 251px;
+  }
 
-    .form__label-third_last {
-        margin-bottom: 50px;
-    }
+  .form__label-third_last {
+    margin-bottom: 50px;
+  }
 
-    .booking__button {
-        font-size: 18px;
-        line-height: 24px;
-        padding: 13px 45px;
-    }
+  .booking__button {
+    font-size: 18px;
+    line-height: 24px;
+    padding: 13px 45px;
+  }
 }
 
 @media (max-width: 970px) {
-    .section-color {
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
+  .section-color {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 
-    .booking__title {
-        margin-bottom: 40px;
-    }
+  .booking__title {
+    margin-bottom: 40px;
+  }
 
-    .form__title {
-        margin-bottom: 30px;
-    }
+  .form__title {
+    margin-bottom: 30px;
+  }
 
-    .form__subtitle {
-        margin-bottom: 24px;
-    }
-    .form__label {
-        height: 44px;
-    }
+  .form__subtitle {
+    margin-bottom: 24px;
+  }
+  .form__label {
+    height: 44px;
+  }
 
-    .form__radio-label {
-        width: 150px;
-        height: 38px;
-        padding: 7px 20px;
-        font-size: 16px;
-    }
+  .form__radio-label {
+    width: 150px;
+    height: 38px;
+    padding: 7px 20px;
+    font-size: 16px;
+  }
 
-    .form__fieldset-block:not(:last-child) {
-        margin-bottom: 50px;
-    }
+  .form__fieldset-block:not(:last-child) {
+    margin-bottom: 50px;
+  }
 
-    .form__fieldset-block_third {
-        min-height: 422px;
-    }
+  .form__fieldset-block_third {
+    min-height: 422px;
+  }
 
-    .form__input-third {
-        width: 300px;
-    }
+  .form__input-third {
+    width: 300px;
+  }
 
-    .form__input-third_center {
-        width: 280px;
-    }
+  .form__input-third_center {
+    width: 280px;
+  }
 
-    .form__big-block_one {
-        padding-top: 0;
-        gap: 103px;
-    }
+  .form__big-block_one {
+    padding-top: 0;
+    gap: 103px;
+  }
 
-    .form__big-block_last {
-        width: 300px;
-    }
+  .form__big-block_last {
+    width: 300px;
+  }
 
-    .form__big-block_one {
-        flex-direction: unset;
-    }
+  .form__big-block_one {
+    flex-direction: unset;
+  }
 
-    .form__label-third_last {
-        margin-bottom: 35px;
-    }
+  .form__label-third_last {
+    margin-bottom: 35px;
+  }
 
-    .booking__button {
-        font-size: 22px;
-        line-height: 28px;
-        padding: 14px 49px;
-    }
+  .booking__button {
+    font-size: 22px;
+    line-height: 28px;
+    padding: 14px 49px;
+  }
 
-    .form__fieldset-block-grid {
-        display: grid;
-        grid-template-columns: 280px 300px;
-        grid-template-rows: 52px 270px;
-        gap: 42px 105px;
-    }
+  .form__fieldset-block-grid {
+    display: grid;
+    grid-template-columns: 280px 300px;
+    grid-template-rows: 52px 270px;
+    gap: 42px 105px;
+  }
 
-    .form__block {
-        gap: 14px;
-    }
+  .form__block {
+    gap: 14px;
+  }
 
-    .form__select {
-        width: 300px;
-        grid-column: 2/3;
-        grid-row: 1/2;
-    }
+  .form__select {
+    width: 300px;
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
 
-    .form__big-block_center {
-        width: 280px;
-        grid-column: 1/2;
-        grid-row: 2/3;
-    }
+  .form__big-block_center {
+    width: 280px;
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
 
-    .form__big-block_last {
-        width: 300px;
-        grid-column: 2/3;
-        grid-row: 2/3;
-    }
+  .form__big-block_last {
+    width: 300px;
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
 
-    .form__fieldset-block-wrap {
-        flex-wrap: wrap;
-        gap: 32px 66px;
-    }
+  .form__fieldset-block-wrap {
+    flex-wrap: wrap;
+    gap: 32px 66px;
+  }
 
-    .form__input {
-        width: 40px;
-        height: 40px;
-        margin-right: 20px;
-    }
+  .form__input {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+  }
 
-    .form__input_square {
-        width: 40px;
-        height: 40px;
-    }
+  .form__input_square {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 @media (max-width: 650px) {
-    .section-color {
-        padding-top: 30px;
-        padding-bottom: 30px;
-    }
+  .section-color {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 
-    .booking__title {
-        margin-bottom: 13px;
-    }
+  .booking__title {
+    margin-bottom: 13px;
+  }
 
-    .form__title {
-        margin-bottom: 15px;
-        font-size: 14px;
-        line-height: 18px;
-    }
+  .form__title {
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 18px;
+  }
 
-    .form__subtitle {
-        font-size: 14px;
-        line-height: 18px;
-        margin-bottom: 15px;
-    }
-    .form__label {
-        height: 39px;
-    }
+  .form__subtitle {
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 15px;
+  }
+  .form__label {
+    height: 39px;
+  }
 
-    .form__radio-label {
-        width: 130px;
-        height: 30px;
-        padding: 4px 20px;
-        font-size: 14px;
-        line-height: 18px;
-    }
+  .form__radio-label {
+    width: 130px;
+    height: 30px;
+    padding: 4px 20px;
+    font-size: 14px;
+    line-height: 18px;
+  }
 
-    .form__fieldset-block-wrap {
-        flex-direction: column;
-        gap: 25px;
-    }
+  .form__fieldset-block-wrap {
+    flex-direction: column;
+    gap: 25px;
+  }
 
-    .form__fieldset-block_one {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 14px 20px;
-    }
+  .form__fieldset-block_one {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px 20px;
+  }
 
-    .form__input {
-        width: 30px;
-        height: 30px;
-    }
+  .form__input {
+    width: 30px;
+    height: 30px;
+  }
 
-    .form__radio-label-1 {
-        font-size: 16px;
-        line-height: 18px;
-    }
+  .form__radio-label-1 {
+    font-size: 16px;
+    line-height: 18px;
+  }
 
-    .form__fieldset-block-grid {
-        grid-template-columns: 280px;
-        grid-template-rows: 119px 163px 257px;
-        gap: 35px;
-    }
+  .form__fieldset-block-grid {
+    grid-template-columns: 280px;
+    grid-template-rows: 119px 163px 257px;
+    gap: 35px;
+  }
 
-    .form__big-block_one {
-        flex-direction: column;
-        gap: 15px;
-    }
+  .form__big-block_one {
+    flex-direction: column;
+    gap: 15px;
+  }
 
-    .form__block {
-        width: 280px;
-        gap: 12px;
-    }
+  .form__block {
+    width: 280px;
+    gap: 12px;
+  }
 
-    .form__select-wrap {
-        width: 280px;
-    }
+  .form__select-wrap {
+    width: 280px;
+  }
 
-    .form__select {
-        width: 280px;
-    }
+  .form__select {
+    width: 280px;
+  }
 
-    .form__select-text {
-        width: 280px;
-        font-size: 14px;
-        line-height: 18px;
-    }
+  .form__select-text {
+    width: 280px;
+    font-size: 14px;
+    line-height: 18px;
+  }
 
-    .form__big-block_center {
-        grid-column: 1/2;
-        grid-row: 2/3;
-    }
+  .form__big-block_center {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
 
-    .form__big-block_last {
-        width: 280px;
-        grid-column: 1/2;
-        grid-row: 3/4;
-    }
+  .form__big-block_last {
+    width: 280px;
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
 
-    .form__input-third {
-        width: 280px;
-    }
+  .form__input-third {
+    width: 280px;
+  }
 
-    .form__field-data {
-        font-size: 14px;
-        line-height: 18px;
-        height: 52px;
-    }
+  .form__field-data {
+    font-size: 14px;
+    line-height: 18px;
+    height: 52px;
+  }
 
-    .form__triangle {
-        top: 17px;
-    }
+  .form__triangle {
+    top: 17px;
+  }
 
-    .form__label-third_last {
-        margin-bottom: 25px;
-    }
+  .form__label-third_last {
+    margin-bottom: 25px;
+  }
 
-    .booking__button {
-        font-size: 18px;
-        line-height: 26px;
-        padding: 13px 58px;
-        border-radius: 4px;
-    }
+  .booking__button {
+    font-size: 18px;
+    line-height: 26px;
+    padding: 13px 58px;
+    border-radius: 4px;
+  }
 }
